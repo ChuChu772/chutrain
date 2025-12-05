@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../../ttr/k2"
+		},
+		{
+			"path": "../../../../2025 web reference/ss"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "k2"
+	}
+}
