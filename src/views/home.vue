@@ -906,13 +906,31 @@ const wow = ref([
 const texttRef = ref(null);
 const currentText = ref(wow.value[1].textt)
 
+import a1 from '@/assets/a1.png'
+import a2 from '@/assets/a2.jpg'
+import a3 from '@/assets/a3.jpg'
+import a4 from '@/assets/a4.jpg'
+import b1 from '@/assets/b1.png'
+import b2 from '@/assets/b2.png'
+import b3 from '@/assets/b3.png'
+import b4 from '@/assets/b4.png'
+import c1 from '@/assets/c1.jpg'
+import c2 from '@/assets/c2.png'
+import c3 from '@/assets/c3.png'
+import d1 from '@/assets/d1.png'
+import d2 from '@/assets/d2.png'
+import d3 from '@/assets/d3.png'
+import d4 from '@/assets/d4.jpg'
+import e1 from '@/assets/e1.jpg'
+import e2 from '@/assets/e2.jpg'
+
 const itemsData = [
   { specialContent: "" }, 
-  { num: "01", name:"拾遺", tim: "2024.07 - 2025.05", m1: "陶瓷裝置", mm1: "Html/Css/Js", mm2: "Arduino", pic: '@/assets/a1.png', pics: ['/src/assets/a1.png','/src/assets/a2.jpg','/src/assets/a3.jpg','/src/assets/a4.jpg']  }, // index 1
-  { num: "02", name:"氣息的反饋", tim: "2024.01 - 2024.05", m1: "充氣裝置", m2: "", mm1: "PP", mm2: "Arduino", pic: '/src/assets/b1.png', pics: ['/src/assets/b1.png','/src/assets/b2.png','/src/assets/b3.png','/src/assets/b4.png'] },
-  { num: "03", name:"共生", tim: "2023.10 - 2024.01", m1: "陶瓷裝置", mm1:"Makey Makey", mm2:"Arduino", pic: '/src/assets/c1.jpg', pics: ['/src/assets/c1.jpg','/src/assets/c2.png','/src/assets/c3.png'] },
-  { num: "04", name:"A子的夏天", tim: "2022.10 - 2023.01", m1: "AR動畫", mm1:"Procreate", pic: '/src/assets/a1.png', pics: ['/src/assets/a1.png','/src/assets/pp.png'] },
-  { num: "05", name:"浮泡", tim: "2021.10", m1: "裝置藝術", mm1:"歐根紗", pic: '/src/assets/e1.JPG', pics: ['/src/assets/e1.JPG','/src/assets/e2.JPG'] },
+  { num: "01", name:"拾遺", tim: "2024.07 - 2025.05", m1: "陶瓷裝置", mm1: "Html/Css/Js", mm2: "Arduino", pic: a1, pics: [a1, a2, a3, a4]  }, // index 1
+  { num: "02", name:"氣息的反饋", tim: "2024.01 - 2024.05", m1: "充氣裝置", m2: "", mm1: "PP", mm2: "Arduino", pic: b1, pics: [b1, b2, b3, b4] },
+  { num: "03", name:"共生", tim: "2023.10 - 2024.01", m1: "陶瓷裝置", mm1:"Makey Makey", mm2:"Arduino", pic: c1, pics: [c1, c2, c3] },
+  { num: "04", name:"A子的夏天", tim: "2022.10 - 2023.01", m1: "AR動畫", mm1:"Procreate", pic: d2, pics: [d2, d1, d3, d4] },
+  { num: "05", name:"浮泡", tim: "2021.10", m1: "裝置藝術", mm1:"歐根紗", pic: e1, pics: [e1, e2] },
   { title: "", description: "" }
 ];
 
