@@ -11,9 +11,9 @@ const LectureRecord = () => import('../views/LectureRecord.vue')
 const Contact = () => import('../views/Contact.vue')
 
 const routes = [
-  { path: '/', name: 'Home', component: Home },
-  { path: '/LectureRecord', name: 'LectureRecord', component: LectureRecord },
-  { path: '/Contact', name: 'Contact', component: Contact }
+  { path: '/', name: 'Home', component: () => import('../views/home.vue') },
+  { path: '/LectureRecord', name: 'LectureRecord', component: () => import('../views/LectureRecord.vue') },
+  { path: '/Contact', name: 'Contact', component: () => import('../views/Contact.vue') }
 ]
 
 window.playEnter = async (done) => {

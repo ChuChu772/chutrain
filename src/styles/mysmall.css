@@ -72,6 +72,10 @@
   width: 50%;
   font: var(--a4mono);
 }
+.appfp1 span, .appfp2 span, .appfp3 span {
+  font-size: 8px;
+  font-family: "Roboto Mono", monospace !important;
+}
 #tree{
   z-index: 1001;
   display: flex;
@@ -906,6 +910,7 @@
 }
 .p5 {
   display: none;
+  pointer-events: none;
 }
 .mousew{
   display: flex;
@@ -950,6 +955,7 @@
   height: 100%;
   width: 100%;
   align-items: center;
+  pointer-events: none;
   justify-content: space-between;
 }
 .mw2 .root2{
@@ -974,8 +980,8 @@
   position: relative;
   justify-content: end;
   align-items: start;
-  pointer-events: auto;
   padding: 8px 0;
+  pointer-events: auto;
 }
 .mw2w h4{
   font-size: 24px;

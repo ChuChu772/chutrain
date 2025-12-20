@@ -218,7 +218,7 @@
   transition: all 0.3s ease;
 }
 .p23w1::after{
-  content: "About me";
+  content: "Back";
 }
 .p23w1:nth-child(2):after{
   content: "Contact";

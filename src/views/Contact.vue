@@ -4,7 +4,19 @@
     <!-- <div class="cr">
         <img src="/cr.png"></img>
     </div> -->
-    <div class="contop"></div>
+    <div class="contop" ref="contop">
+        <div class="loading" ref="loading">
+            Waiting<span class="dots">
+                <span>.</span><span>.</span><span>.</span>
+            </span>
+        </div>
+        <div class="success" ref="success"><p>Success!</p></div>
+        <div class="failed" ref="failed"><p>Failed!</p></div>
+        <div class="contopw" ref="contopw">
+            <p class="cw1" ref="cw1">Your message has been sent! Thank You!</p>
+            <p class="cw2" ref="cw2">Failed to send your message. Please try again.</p>
+        </div>
+    </div>
     <div class="con">
         <div class="contitle"><p class="tbig">Let's Be In<br>Touch</p></div>
         <div class="touch">
@@ -46,16 +58,81 @@
 
 <style scoped>
 @media screen and (min-width: 800px) {
-    .contop{
-        display: none;
-        height: 100vh;
-        width: 100vw;
-        position: fixed;
-        z-index: 100;
-        opacity: 0;
-  backdrop-filter: blur(5px);
-  background-color: rgba(216, 218, 207, .5);
-    }
+.contop{
+    display: none;
+    /* display: flex; */
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 100;
+    /* opacity: 0; */
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    background-color: rgba(236, 237, 228, 0.5);
+}
+.contopw{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--h6);
+    line-height: 1.5;
+    letter-spacing: .05rem;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 500;
+    color: var(--cc);
+}
+.cw1, .cw2{
+    position: absolute;
+    display: flex;
+    opacity: 0;
+}
+.loading {
+    position: absolute;
+    top: 40vh;
+    font-size: var(--h2);
+    display: flex;
+    align-items: center;
+    color: var(--cc);
+    font-family: "Sirivennela", sans-serif;
+    transform-origin: top;
+}
+.success, .failed{
+    position: absolute;
+    top: 40vh;
+    font-size: var(--h2);
+    display: flex;
+    align-items: center;
+    color: var(--cc);
+    font-family: "Sirivennela", sans-serif;
+    transform-origin: bottom;
+    transform: scaleY(0);
+    opacity: 0;
+}
+
+.dots {
+  display: inline-flex;
+  margin-left: 5px;
+}
+
+.dots span {
+  opacity: 0;
+  animation: blink 3s infinite;
+  margin: 0 2px;
+}
+
+.dots span:nth-child(1) { animation-delay: 0s; }
+.dots span:nth-child(2) { animation-delay: 0.3s; }
+.dots span:nth-child(3) { animation-delay: 0.6s; }
+
+@keyframes blink {
+  0%, 50% { opacity: 0; }
+  20%, 40% { opacity: 1; }
+  90%, 100% { opacity: 0; } /* 最後一起消失 */
+}
+
 .cr{
     display: flex;
     position: absolute;
@@ -248,6 +325,82 @@
 }
 
 @media screen and (max-width: 800px) {
+.contop{
+    display: none;
+    /* display: flex; */
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 100;
+    /* opacity: 0; */
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    background-color: rgba(236, 237, 228, 0.5);
+}
+.contopw{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font: var(--a4mono);
+    letter-spacing: .05px;
+    color: var(--cc);
+}
+.cw1, .cw2{
+    position: absolute;
+    opacity: 0;
+  font-family: "Roboto Mono", monospace;
+}
+.loading {
+    position: absolute;
+    top: 40vh;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+  color: rgb(182, 185, 169);
+    font-family: "Sirivennela", sans-serif;
+    transform-origin: top;
+}
+.loading span{
+    font-family: inherit;
+}
+.success, .failed{
+    display: flex; 
+    position: absolute;
+    top: 40vh;
+    font-size: 32px;
+    align-items: center;
+  color: rgb(182, 185, 169);
+    font-family: "Sirivennela", sans-serif !important;
+    transform-origin: bottom;
+    transform: scaleY(0.01);
+    opacity: 0;
+}
+.success p, .failed p {
+    font-family: "Sirivennela", sans-serif !important;
+}
+.dots {
+  display: inline-flex;
+  margin-left: 5px;
+}
+
+.dots span {
+  opacity: 0;
+  animation: blink 3s infinite;
+  margin: 0 2px;
+}
+
+.dots span:nth-child(1) { animation-delay: 0s; }
+.dots span:nth-child(2) { animation-delay: 0.3s; }
+.dots span:nth-child(3) { animation-delay: 0.6s; }
+
+@keyframes blink {
+  0%, 50% { opacity: 0; }
+  20%, 40% { opacity: 1; }
+  90%, 100% { opacity: 0; } /* 最後一起消失 */
+}
 .con{
     display: flex;
     flex-direction: column;
@@ -424,6 +577,13 @@ const submitForm = () => {
     contactForm.value.requestSubmit()
   }
 }
+const contop = ref(null)
+const contopw = ref(null)
+const loading = ref(null)
+const success = ref(null)
+const failed = ref(null)
+const cw1 = ref(null)
+const cw2 = ref(null)
 
 onMounted(() => {
   if (!contactForm.value) return;
@@ -436,17 +596,15 @@ const sendEmail = async () => {
   if (!formData.name.trim()) return alert("請輸入姓名");
   if (!formData.email.trim()) return alert("請輸入 Email");
   if (!formData.message.trim()) return alert("請輸入訊息");
- const contop = document.querySelector(".contop");
 
-// GSAP 動畫初始狀態
-gsap.set(contop, { display: "flex", opacity: 1 });
 
-// 建一個 Promise 來控制動畫
+gsap.set(contop.value, { display: "flex", opacity: 1 });
+
 const animateWhileSending = () => {
   return new Promise(resolve => {
-    gsap.to(contop, {
+    gsap.to(contop.value, {
       opacity: 0,
-      duration: 999, // 設很大，動畫會被手動結束
+      duration: 999,
       ease: "linear",
       onComplete: resolve
     });
@@ -461,10 +619,44 @@ const animateWhileSending = () => {
       contactForm.value
     )
     contactForm.value.reset();
-    gsap.to(contop, { opacity: 0, duration: 0.5, display: "none" });
+    setTimeout(() => {
+        gsap.to(contop.value, { opacity: 0, duration: 1, display: "none" });
+    }, 2000);
+    gsap.to(loading.value, {
+      scaleY: 0,
+      opacity: 1,
+      duration: .6,
+    });
+    gsap.to(success.value, {
+      scaleY: 1,
+      opacity: 1,
+      duration: .6,
+    });
+    gsap.to(cw1.value, {
+      opacity: 1,
+      duration: 1,
+    });
+
   } catch (err) {
     console.error("Failed to send email:", err)
-    alert("Failed to send email")
+    setTimeout(() => {
+        gsap.to(contop.value, { opacity: 0, duration: 1, display: "none" });
+    }, 2000);
+    gsap.to(loading.value, {
+      scaleY: 0,
+      opacity: 1,
+      duration: .6,
+    });
+    gsap.to(failed.value, {
+      scaleY: 1,
+      opacity: 1,
+      duration: .6,
+    });
+    gsap.to(cw2.value, {
+      opacity: 1,
+      duration: 1,
+    });
+
   }
 }
 

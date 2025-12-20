@@ -160,7 +160,6 @@ Using Vue/ Nuxt / MySQL to build interactive and visually engaging
   </div>
 </section>
 <Pre
-  id="pre"
   :cursorBig="cursorBig"
   @change-cursor="cursorBig = $event"
 />
@@ -364,13 +363,16 @@ Using Vue/ Nuxt / MySQL to build interactive and visually engaging
 
 
 <script setup lang="ts">
-import { ref, onMounted, onBeforeUnmount, watch, nextTick, reactive } from 'vue';
+import { Ref, ref, onMounted, onBeforeUnmount, watch, nextTick, reactive } from 'vue';
 import gsap from 'gsap';
 import ScrollTrigger from "gsap/ScrollTrigger";
 import ScrollSmoother from 'gsap/ScrollSmoother';
 import SplitText from 'gsap/SplitText';
 import { useScrollRestore } from '../composables/useScrollRestore'
 import { useRouter } from 'vue-router';
+import { debounce, throttle } from 'lodash-es';
+// 或單獨 import
+
 
 const router = useRouter();
 
@@ -384,7 +386,7 @@ onMounted(async () => {
   if (sessionStorage.getItem('page-loaded')) return
 
   await document.fonts.ready
-  await new Promise(r => setTimeout(r, 5000))
+  await new Promise(r => setTimeout(r, 4000))
 
   document.body.classList.remove('lock-scroll')
   sessionStorage.setItem('page-loaded', 'true')
@@ -498,7 +500,7 @@ const getClientPos = (e) => {
   }
   return { x: e.clientX, y: e.clientY }
 }
-const onDrag = (e) => {
+const onDrag = (e: MouseEvent) => {
   if (!dragging) return
 
   e.preventDefault() // 重要：避免手機滑動整個畫面
@@ -766,26 +768,47 @@ gsap.from(".p3t2up", {
 
 
 
+const cursorFixed = ref<HTMLElement | null>(null)
+const cursor = ref<HTMLElement | null>(null)
 
-const cursorFixed = ref(null)
-const cursor = ref(null)
+let targetX = 0
+let targetY = 0
+let cursorX = 0
+let cursorY = 0
 
-function handleMouseMove(e) {
+function animateCursor() {
+  if (cursor.value) {
+    // 緩動公式
+    cursorX += (targetX - cursorX) * 0.05
+    cursorY += (targetY - cursorY) * 0.05
+
+    cursor.value.style.transform = `translate(${cursorX}px, ${cursorY}px)`
+  }
+
+  requestAnimationFrame(animateCursor)
+}
+
+function handleMouseMove(e: MouseEvent) {
   if (cursorFixed.value) {
     cursorFixed.value.style.transform = `translate(${e.clientX - 7}px, ${e.clientY - 7}px)`
   }
-  if (cursor.value) {
-    const scrollY = window.scrollY
-    const scrollX = window.scrollX
-    cursor.value.style.transform = `translate(${e.clientX + scrollX - 17}px, ${e.clientY + scrollY - 17}px)`
-  }
+
+  // 目標位置更新，不立即改 transform
+  const scrollY = window.scrollY
+  const scrollX = window.scrollX
+  targetX = e.clientX + scrollX - 17
+  targetY = e.clientY + scrollY - 17
 }
+
 onMounted(() => {
   window.addEventListener('mousemove', handleMouseMove)
+  animateCursor()
 })
+
 onBeforeUnmount(() => {
   window.removeEventListener('mousemove', handleMouseMove)
 })
+
 
 const otherp = ref(null)
 const applySplitText =  async (
@@ -1146,7 +1169,6 @@ const startPicCarousel = (index) => {
   let i = currentPicIndex.value[index];
   const slides = hpic.querySelectorAll<HTMLElement>('.slide');
 
-  // 顯示暫停的那張
   slides.forEach((s, idx) => {
     s.style.opacity = idx === i ? '1' : '0';
   });
@@ -1160,7 +1182,7 @@ const startPicCarousel = (index) => {
   }, 2000);
 };
 
-const stopPicCarousel = (index) => {
+const stopPicCarousel = (index: number) => {
   if (intervals[index]) clearInterval(intervals[index]);
   intervals[index] = null;
 };
@@ -1171,7 +1193,7 @@ const stopPicCarousel = (index) => {
     let closest = 0;
     let closestOffset = Infinity;
 
-    items.forEach((item, i) => {
+    items.forEach((item: HTMLElement, i: number) => {
       const offsetLeft = Math.abs(item.getBoundingClientRect().left - containerRect.left);
       if (offsetLeft < closestOffset) {
         closestOffset = offsetLeft;
@@ -1188,17 +1210,16 @@ const stopPicCarousel = (index) => {
 nextTick(() => {
   const container = p31.value;
   if (!container) return;
-  console.log("Init active:", activeItem.value);
 const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           console.log("➡ p31 出現在畫面，啟動 checkClosestItem()");
-          checkClosestItem();            // ★ 在此啟動！
-          observer.disconnect();         // 一次就好，避免重複觸發
+          checkClosestItem();
+          observer.disconnect();
         }
       });
     }, {
-      threshold: 0.3   // p31 有 30% 出現在畫面才啟動
+      threshold: 0.3
     });
     observer.observe(container);
     // scroll 時正常更新
@@ -1215,11 +1236,10 @@ const mw1 = ref(null);
 
 let index = 0;
 let isActive = false;
-// 觸發位置（每次觸發後會更新）
 let lastTriggerX = 0;
 let lastTriggerY = 0;
 let accumulatedDistance = 0;
-const maxWords = 20;         // 最多顯示單字數量
+const maxWords = 20;
 
 const container = document.createElement('div');
 container.style.position = 'fixed';
@@ -1234,19 +1254,18 @@ measureSpan.style.position = 'fixed';
 measureSpan.style.visibility = 'hidden';
 container.style.width = '0';
 container.style.height = '0';
-// measureSpan.style.opacity = .7;
-measureSpan.style.whiteSpace = 'pre'; // 保留空格寬度
-measureSpan.style.font = '17px monospace'; // 換成你實際的字體樣式
+measureSpan.style.whiteSpace = 'pre';
+measureSpan.style.font = '17px monospace';
 measureSpan.style.transform = "translateY(-50%)";
 document.body.appendChild(measureSpan);
 
-function getTextWidth(text) {
+function getTextWidth(text: string) {
   measureSpan.textContent = text;
   return measureSpan.offsetWidth;
 }
 
 // 當滑鼠進入 p5 區域
-function handleMouseEnter(e) {
+function handleMouseEnter(e: MouseEvent) {
   isActive = true;
   index = 0;
   // 初始化觸發點為滑鼠當下位置
@@ -1260,7 +1279,7 @@ function handleMouseLeave() {
 }
 
 // 滑鼠移動檢查
-function handlemm(e) {
+function handlemm(e: MouseEvent) {
   if (!isActive) return;
 
 
@@ -1283,7 +1302,6 @@ lastTriggerX = e.clientX;
 lastTriggerY = e.clientY;
 }
 
-// 建立並顯示單字（每個字用 span 包字母，並 stagger 顯示）
 const showWord = (kk: string, x: number, y: number) => {
   const wordSpan = document.createElement('span');
   wordSpan.classList.add('p5word');
@@ -1292,9 +1310,9 @@ const showWord = (kk: string, x: number, y: number) => {
   wordSpan.style.position = 'fixed';
   wordSpan.style.left = `${x}px`;
   wordSpan.style.top = `${y - 20}px`;
-  wordSpan.style.width = width + 'px';  // 固定容器寬度
+  wordSpan.style.width = width + 'px';
   wordSpan.style.display = 'inline-block';
-  wordSpan.style.textAlign = 'center';   // 文字置中
+  wordSpan.style.textAlign = 'center';
   wordSpan.style.whiteSpace = 'nowrap';
   wordSpan.style.visibility = 'visible';
 
@@ -1324,11 +1342,11 @@ if (container.children.length > maxWords) {
   const excessWords = Array.from(container.children).slice(0, container.children.length - maxWords);
 
   excessWords.forEach(wordSpan => {
-    startWordFadeOut(wordSpan); 
+    startWordFadeOut(wordSpan as HTMLElement); 
   });
 }
 
-function startWordFadeOut(wordSpan) {
+function startWordFadeOut(wordSpan: HTMLElement) {
   if (!wordSpan) return;
 
   const letters = Array.from(wordSpan.children) as Array<HTMLElement>;
@@ -1353,7 +1371,7 @@ function startWordFadeOut(wordSpan) {
 
     isClearing = true;
     Array.from(container.children).forEach(wordSpan => {
-      startWordFadeOut(wordSpan);
+      startWordFadeOut(wordSpan as HTMLElement);
     });
 
     setTimeout(() => { isClearing = false }, 1000); // 1秒後才允許下一次
@@ -1404,7 +1422,7 @@ onMounted(() => {
 
   let currentLineWidth = 0;
 
-  words.forEach((word) => {
+  words.forEach((word: string) => {
 
   
     if (word === "\n") {
@@ -1413,17 +1431,14 @@ onMounted(() => {
       return;
     }
 
-    // 測量單詞寬度
     measureSpan.textContent = word === " " ? "\u00A0" : word;
     const wordWidth = measureSpan.offsetWidth;
 
-    // 判斷是否要換行
     if (currentLineWidth + wordWidth > parentWidth) {
       mewRef3.value.appendChild(document.createElement("br"));
       currentLineWidth = 0;
     }
 
-    // 把整個 word 一次加入，確保不被切開
     const span = document.createElement("span");
     span.textContent = word === " " ? "\u00A0" : word;
     span.style.display = "inline-block";
@@ -1464,18 +1479,25 @@ const specialStyle = ref({
 })
 
 
-const g1 = ref(null)
-const g2 = ref(null)
-const g3 = ref(null)
 const isOpen1 = ref(false)
-let currentThumb = null
+let currentThumb: HTMLElement | null = null
+const g1: Ref<HTMLElement | null> = ref(null)
+const g2: Ref<HTMLElement | null> = ref(null)
+const g3: Ref<HTMLElement | null> = ref(null)
 
-const open = (index) => {
-  switch(index){
-    case 1: currentThumb = g1.value; break;
-    case 2: currentThumb = g2.value; break;
-    case 3: currentThumb = g3.value; break;
-  }
+const open = (index: number) => {
+  switch (index) {
+    case 1:
+      currentThumb = g1.value
+      break
+    case 2:
+      currentThumb = g2.value
+      break
+    case 3:
+      currentThumb = g3.value
+        break
+    default:
+      currentThumb = null}
 
   if(!currentThumb) return
 
@@ -1488,7 +1510,7 @@ const open = (index) => {
   const offsetX = centerX - (rr.left + rr.width / 2)
   const offsetY = centerY - (rr.top + rr.height / 2)
 
-  ;(document.querySelector("*") as HTMLElement).style.overflow = 'hidden';
+  ;(document.querySelector("body") as HTMLElement).style.overflow = 'hidden';
 
   currentThumb.style.transformOrigin = 'center center'
   currentThumb.classList.add('middle')
