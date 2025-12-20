@@ -82,7 +82,7 @@
       </div>
     </div>
       <div class="chur">
-        <div class="chupic"><img src="@/assets/chupic.png" alt="">
+        <div class="chupic"><img :src="chupic" alt="">
       </div>
     </div>
   </div>
@@ -371,6 +371,7 @@ import SplitText from 'gsap/SplitText';
 import { useScrollRestore } from '../composables/useScrollRestore'
 import { useRouter } from 'vue-router';
 import { debounce, throttle } from 'lodash-es';
+import chupic from '@/assets/chupic.png'
 // 或單獨 import
 
 
