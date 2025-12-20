@@ -7,6 +7,10 @@ import Menu from './components/Menu.vue'
 import Pre from './components/Pre.vue'
 // import LectureRecord from './views/LectureRecord.vue'
 
+if (!sessionStorage.getItem('page-loaded')) {
+  document.body.classList.add('lock-scroll')
+}
+
 // 先 createApp
 const app = createApp(App)
 

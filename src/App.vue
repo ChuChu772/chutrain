@@ -7,3 +7,4 @@ import { RouterView } from 'vue-router'
   <div id="page-layer"></div>
 <router-view></router-view>
 </template>
+

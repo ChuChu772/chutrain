@@ -16,15 +16,14 @@
         <div class="apptl">
             <div class="appfp">
               <div class="appfp1">
-                <p><span>PiPi Chou 2025 portfilio</span><br>New Taipei City, Taiwan<br>
-                Available for freelance work<br>
-                E: matsu310720@gmail.com</p>
+                <h4>Pi Pi Chou 2025 portfilio</h4>
+                <p class="appfp1text" ref="appfp1t">This web-based portfolio showcases four years of university projects, built with front-end development and interactive design.</p>
               </div>
               <div class="appfp2"> 
-                <p><span>Contact</span><br>Working as a frontend engineer, focusing on development as well as personal design projects. </p>
+                <p class="appfp2text" ref="appfp2t">I work as a front-end engineer, focusing on both development and personal design projects.</p>
               </div>
               <div class="appfp3"> 
-                <p><span></span><br>Committed to smooth communication and meticulous craftsmanship in every project.</p>
+                <p class="appfp3text" ref="appfp3t">I am committed to clear communication and meticulous craftsmanship in every project.</p>
               </div>
             </div>
           <svg id="tree" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
@@ -34,32 +33,31 @@
           </g>
           <path class="tree" d="M708.72,477.93c-1.06,4.11-6.44,12.68-9.59,15.16-1.75,1.38-3.76.66-4.77,1.35-3.03,2.06-.75,6.65-7.93,4.35-1.03.59-.69,2.81-1.11,3.23-.46.45-12.03,2.34-12.43.31,2.42-2.2,5.85-8.05,8.45-9.41,2.03-1.06,6.5,1.38,9.17-1.91,1.14-1.4-.18-3.24.27-4.58.36-1.1,12.24-15.72,14.23-18.23.98-1.24,5.11-6.67,6.63-5.74l.62,5.14c7.07-10.11,11.62-25.34,25.04-27.8l-9.83,17.53c4.32,3.49,7.8-.74,12.42-1.19-2.68-4.85-5.07-3.93-3.05-10.16,2.51-7.74,11.9-18.41,18.76-22.69,4.97-3.11,9.11-4.87,14.29-8.14,2.34-1.48,3.88,1.85,4.71-4.04.15-1.08,1.01-2.91-1.14-1.59-2.67,1.63-6.81,6.98-9.06,8.1-2.67,1.34-5.83,1.12-8.53,2.38-2.25,1.05-2.68,3.68-5.12,4.09-1.37-4.22.48-8.4.9-12.86.13-1.41-1.19-2.49-1.28-3.31-.04-.36,2.96-5,3.09-6.64.63-8.09,1.46-15.56,2.23-23.79.39-4.17,1.69-8.21.87-12.87,2.39-1.92,3.59,1.31,4.01,1.24,1.72-.29,5.06-3.01,7.59-3.62,3.01-.73,8.62.17,11.24-.82,2.32-.88,7.16-5.13,10.75-6.28,2.21-.71,3.37.94,4.95.61,3.31-.69,9.96-5.44,13.45-7.01,1.55-.35-.12,4.61,2.89,3.58,4.45-1.52,7.24-6.06,11.51-7.84l1.78,3.41c4.33-3.09,6.67.85,9.18.52,3.17-.42,5.24-5.01,7.32,1.37l4.04-.23c-6.97,12.78-18.79,21.82-29.3,31.59-14.45,13.44-25.43,25.77-39.07,40.1-4.45,4.68-10.83,8.63-14.06,14.44l12.45-10.27c18.08-19.83,35.69-40.87,58.78-54.84,4.54,8.81,8.17,15.05.95,23.53-.9,1.05-3,1.18-4.21,2.55-3.12,3.52-8.02,11.59-12,14.88-1.09.9-2.53,1.1-3.84,1.43-.33,3.99,7.01,10.76,3.03,13.55-.78.54-2.41-.18-2.9.31-1.69,1.66-1.92,10.38-6.73,10.92-.39.04-3.4-4.04-7.08-.58l3.37,5.58-4.81,2.15-1.8-8.06c-5.14.89-4.51,5.41-1.23,8.72l-16.24,7.86c-.25-2,3.22-2.05,3.88-4.01.47-1.38,0-5.39-1.92-3.82-.63.51-4.3,7.58-5.94,9.21-3.3,3.3-7.41,3.14-11.71,4.24l4.91-7.77-1.57-5.67c-2.91-.36-1.18,2.19-2.22,2.64-3.47,1.5-4.44-.87-4.56,4.78-3.9-.22-5.53,3.2-7.56,4.25.37-1.45.3-3.03,1.12-4.47-3.25.17-6.32,2.16-3.63,5.04.76-.32,1.86-.23,2.51-.56-1.07,4.22-3.42,10.03-8.06,11.31.64-1.13-.01-3.99.11-4.25.07-.15,2.58-.44,2.53-2.24-.03-.99-1.56-2.37-1.75-3.73-.27-1.92,5.68-9.71,7.43-11.72,2.04-2.34,6.04-2.65,6.24-7.74l-21.05,24.27c2.07,1.27,6.55-2.96,6.61,1.17-4.66.01-1.83,4.74-6.64,5.82-4.83,1.08-4.52-4.96-9.49-2.21l4.59,1.61c-.89,4.24-7.27,3.04-7.58,3.36-.56.6.35,3.71-2.82,4.82-2.49.87-5.89-.57-8.52,1.86l.1-4.24c-2.42.98-4.1,2.18-6.84,2.57.41-1.61.99-3.87.89-5.48-1.87-.39-3.04,3.5-3.2,4.46-.35,2.12,1.21,1.18,2.31,1.03ZM702.01,485.77l2.01-.45-.9-4.03c-1.89.99-1.78,2.65-1.1,4.47ZM725.64,463.57l3.02-.67-.68-3.02-2.79,1.69.45,2ZM774.49,445.27l-1.65,1.95,3.56,1.85-1.91-3.8ZM777.73,407.49l4.37-1.98,7.62-5.97c-2.75,1.07-6.03,2.93-8.46,4.57-1.08.73-3.82,1.92-3.52,3.37Z"/>
           </svg>
-        
-      </div>
+        </div>
           <div class="apps">
             <div class="apptop">
               <div
                 v-for="(many, index) in topItems"
-                :key="index"
+                :key="many.id" 
                 class="draggable"
                 :ref="el => topRefs[index] = el"
               @mousedown="startDrag($event, index, 'top')"
               @touchstart="(e) => startDrag(e, index, 'top')"
-              :style="{ top: many.posY + 'px', left: many.posX + 'px' }"
+              :style="{ top: many.posY + 'px', left: many.posX + 'px', position: 'absolute' }"
               >
                 {{ many.label }}
               </div>
             </div>    
-          <div ref="cursor" class="cursor"></div>
-          <div class="root" ref="root">
-            <svg ref="blob" r="50" id="root" data-name="root" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 971.44 126.28">
-              <path d="M1.93,4.41l109.06-.03c20.23,2.31,48.83,8.47,48.04,34.06,11.76-22.54,37.98-32.77,62.1-36.01,40.59-5.46,104.25,5.21,108.24,55.44l2.98-13.34c8.75-24.65,35.9-37.23,60.27-41.3,34.64-5.8,73.89-1.02,100.47,23.4V4.41l396.09-.03c32.18,3.06,76.19,15.28,79.07,53.81,5.52,73.91-106.54,65.12-153.67,64.97-21.88-.07-44.26-.65-66.13-.75-33.06-.15-66.17.26-99.21-.07-1.23-.77-.78-9.03-.7-10.91,1.17-1.86,19.52.15,22.89-1.49V16.91l-13.94-.7c-.95.94,2.65,23.16.57,26.6-.86,2.28-10.76,1.06-13.12.14-6.67-2.59-9.27-21.35-14.27-26.74h-33.79v93.73l25.78,1.39v11.11h-94.05v-11.11l25.08-1.39V16.21h-34.14c-3.41,5.91-6.8,21.56-11.49,25.7-1.08.95-4.42,1.93-4.57,2.54-.63,2.56,2.5,11.57,2.81,15.17.67,7.81-.7,16.32-3.46,23.61-20.35,53.77-126.55,54.92-160.97,15.97-8.06-9.13-10.49-19.09-12.17-30.92-.76,22.93-16.79,39.16-36.8,48.03-51.19,22.68-155.1,8.38-137.72-68.16-2.82,3.46-5.65,5.95-9.53,8.2l-16.93,7.07c7.64,1.9,14.38,8.01,18.4,14.64,6.2,10.22,7.42,22.51,11.9,33.27h20.55c-.27,5.24,3.49,10.43-3.33,12.3-11.14,3.05-40.7,2.48-51.48-1.76-18.81-7.4-13.26-31.88-25.01-45.2-2.05-2.33-10.48-6.99-13.18-6.99h-19.51c-.07,0-1.05.97-1.05,1.04v39.23l22.99,1.39v11.11H1.93l-.6-11.01c1.3-2.08,19.7.66,21.56-1.93,1.35-1.89.5-21.49.61-25.62.32-12.7.26-24.75,0-37.43-.09-4.42.74-27.27-.59-29.13l-20.98-1.1V4.41ZM235.87,13.65c-47.11,4.62-50.75,85.94-6.66,98.56,68.71,19.67,77.5-105.51,6.66-98.56ZM410.73,13.64c-44.86,4.81-48.66,84.87-7.53,98.04,70.7,22.65,81.15-105.94,7.53-98.04ZM66.02,58.57c14.28-.61,41.15.66,48.89-14.11,5.71-10.89.48-19.75-10.1-24.2-2.58-1.09-12.43-4.04-14.76-4.04h-24.04v42.35ZM790.56,41.21h-14.98c-4.44-7.98-6.46-17.22-11.15-24.99h-49.81v40.96h32.74c.61-2.89,2.02-14.19,3.65-15.8,2.34-2.32,9.91.49,13.07-.16v42.35c-3.36-.95-10.93,2.04-13.24-.34-1.78-1.84-1.72-11.34-3.48-14.24h-32.74v42.35h55.73c2.68-7.03,4.9-15.94,8.45-22.48.62-1.15,2.39-3.9,3.75-3.9h12.89v24.65c0,3.64,15.08-.57,17.42.35V16.91l-22.29-.69v24.99ZM857.45,111.33c.94.63,19.61,0,22.64,0,29.24,0,48.81-33.65,42.5-60.41-6.86-29.13-40.26-37.8-66.54-34.01v91.3c0,.17,1.25,3.03,1.39,3.12Z"/>
-            </svg>  
-          </div> 
+            <div ref="cursor" class="cursor"></div>
+            <div class="root" ref="root">
+              <svg ref="blob" r="50" id="root" data-name="root" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 971.44 126.28">
+                <path d="M1.93,4.41l109.06-.03c20.23,2.31,48.83,8.47,48.04,34.06,11.76-22.54,37.98-32.77,62.1-36.01,40.59-5.46,104.25,5.21,108.24,55.44l2.98-13.34c8.75-24.65,35.9-37.23,60.27-41.3,34.64-5.8,73.89-1.02,100.47,23.4V4.41l396.09-.03c32.18,3.06,76.19,15.28,79.07,53.81,5.52,73.91-106.54,65.12-153.67,64.97-21.88-.07-44.26-.65-66.13-.75-33.06-.15-66.17.26-99.21-.07-1.23-.77-.78-9.03-.7-10.91,1.17-1.86,19.52.15,22.89-1.49V16.91l-13.94-.7c-.95.94,2.65,23.16.57,26.6-.86,2.28-10.76,1.06-13.12.14-6.67-2.59-9.27-21.35-14.27-26.74h-33.79v93.73l25.78,1.39v11.11h-94.05v-11.11l25.08-1.39V16.21h-34.14c-3.41,5.91-6.8,21.56-11.49,25.7-1.08.95-4.42,1.93-4.57,2.54-.63,2.56,2.5,11.57,2.81,15.17.67,7.81-.7,16.32-3.46,23.61-20.35,53.77-126.55,54.92-160.97,15.97-8.06-9.13-10.49-19.09-12.17-30.92-.76,22.93-16.79,39.16-36.8,48.03-51.19,22.68-155.1,8.38-137.72-68.16-2.82,3.46-5.65,5.95-9.53,8.2l-16.93,7.07c7.64,1.9,14.38,8.01,18.4,14.64,6.2,10.22,7.42,22.51,11.9,33.27h20.55c-.27,5.24,3.49,10.43-3.33,12.3-11.14,3.05-40.7,2.48-51.48-1.76-18.81-7.4-13.26-31.88-25.01-45.2-2.05-2.33-10.48-6.99-13.18-6.99h-19.51c-.07,0-1.05.97-1.05,1.04v39.23l22.99,1.39v11.11H1.93l-.6-11.01c1.3-2.08,19.7.66,21.56-1.93,1.35-1.89.5-21.49.61-25.62.32-12.7.26-24.75,0-37.43-.09-4.42.74-27.27-.59-29.13l-20.98-1.1V4.41ZM235.87,13.65c-47.11,4.62-50.75,85.94-6.66,98.56,68.71,19.67,77.5-105.51,6.66-98.56ZM410.73,13.64c-44.86,4.81-48.66,84.87-7.53,98.04,70.7,22.65,81.15-105.94,7.53-98.04ZM66.02,58.57c14.28-.61,41.15.66,48.89-14.11,5.71-10.89.48-19.75-10.1-24.2-2.58-1.09-12.43-4.04-14.76-4.04h-24.04v42.35ZM790.56,41.21h-14.98c-4.44-7.98-6.46-17.22-11.15-24.99h-49.81v40.96h32.74c.61-2.89,2.02-14.19,3.65-15.8,2.34-2.32,9.91.49,13.07-.16v42.35c-3.36-.95-10.93,2.04-13.24-.34-1.78-1.84-1.72-11.34-3.48-14.24h-32.74v42.35h55.73c2.68-7.03,4.9-15.94,8.45-22.48.62-1.15,2.39-3.9,3.75-3.9h12.89v24.65c0,3.64,15.08-.57,17.42.35V16.91l-22.29-.69v24.99ZM857.45,111.33c.94.63,19.61,0,22.64,0,29.24,0,48.81-33.65,42.5-60.41-6.86-29.13-40.26-37.8-66.54-34.01v91.3c0,.17,1.25,3.03,1.39,3.12Z"/>
+              </svg>  
+            </div> 
           <div class="appbot">
             <div
               v-for="(many, index) in botItems"
-              :key="index"
+              :key="many.id" 
               class="draggable"
               :ref="el => botRefs[index] = el"
               @mousedown="startDrag($event, index, 'bot')"
@@ -80,7 +78,7 @@
       </div>
       <div class="mew2" ref="mewRef2">
         <p>I’m an illustrator / designer ,<br>
-        focusing on creating interactive web experiences</p>
+         working as a web creator.</p>
       </div>
     </div>
       <div class="chur">
@@ -93,7 +91,7 @@
       <div class="p22w">
         <div class="p221">
           <div class="aboutme"><p>關於我</p></div>
-            <div class="amw1"><p>畢業於實踐大學設計學院,主修媒體傳達設計。具備廣告設計與媒體傳達背景，專注於創意媒體設計，於2024開始學習網站使用者互動設計，並致力於開發融合視覺敘事、數位技術與使用者體驗的互動專案。目前網頁設計自由接案，多使用Vue / Nuxt架構網站，有架構購物網站及品牌形象網站經驗。</p></div>
+            <div class="amw1"><p>畢業於實踐大學設計學院,主修媒體傳達設計，具備廣告設計與媒體傳達背景，專注於創意媒體設計。在視覺呈現上敏銳，擅長將訊息透過圖像、排版與互動設計有效傳達給使用者。自 2024 年起開始學習網站使用者互動設計，致力於開發融合視覺敘事、數位技術與使用者體驗的互動專案。目前以自由接案進行網頁設計，多使用 Vue / Nuxt 架構，並具備購物網站及品牌形象網站的完整開發經驗。</p></div>
             <div class="amw1"><p>在畢業製作擔任公關組組員一職，負責名人講座的整體規劃與執行，從最初與講者聯繫、安排流程，到中期撰寫講座大綱、視覺素材與宣傳內容，最後協助現場動線與活動主持。熟悉溝通協調、內容策劃和活動執行的完整流程，並能在有限時間中整合資訊、統籌細節。</p></div>
         </div>
         <div class="p222">
@@ -110,9 +108,9 @@
               <p>Arduino</p>
               <p>Nomad</p>
               <p>Davinci</p>
-              <p>Html / Css / Js</p>
-              <p>Vue</p>
-              <p>Nuxt</p>
+              <p>Html / Css / Js / Ts</p>
+              <p>Vue / Nuxt</p>
+              <p>Tailwind</p>
               <p>MySQL</p>
             </div>
           </div>
@@ -138,11 +136,15 @@
   </div>
   <div class="p23">
     <div class="p23w">
-      <div @click="goB" class="p23ww">
-        <p>Lecture<br>record</p>
+      <div @click="goB" class="p23w1">
+        <div class="p23ww">
+        <p>Lecture record</p>
+        </div>
       </div>
-      <div class="p23ww">
+      <div class="p23w1" @click="goC">
+        <div class="p23ww">
         <p>Contact</p>
+      </div>
       </div>
     </div>
   </div>
@@ -157,9 +159,12 @@ Using Vue/ Nuxt / MySQL to build interactive and visually engaging
     </div>
   </div>
 </section>
-
-<Pre :cursorBig="cursorBig"
-    @change-cursor="cursorBig = $event" />
+<Pre
+  id="pre"
+  :cursorBig="cursorBig"
+  @change-cursor="cursorBig = $event"
+/>
+<div class="sp"></div>
 <section class="p3" id="p3">
     <div class="view">
       <div v-if="activeItem" class="overlay" id="overlay">
@@ -186,11 +191,11 @@ Using Vue/ Nuxt / MySQL to build interactive and visually engaging
               connection between digital technology and human interaction.</p>
           </div>
         </div>
-        <div class="p3item6" ref="p3item6">
+        <div class="p3item6" ref="p3item6" v-if="!isWide">
           <div class="p3item61"><p>Scroll left to Creative Media Design.Up to About Me.
             Down to Personal work include Illustration and Photography.</p>
           </div>
-          <div class="p3item61"><p>Scroll left to Creative Media Design.Up to About Me.
+          <div class="p3item61" v-if="!isWide"><p>Scroll left to Creative Media Design.Up to About Me.
             Down to Personal work include Illustration and Photography.</p>
           </div>
         </div>
@@ -221,10 +226,13 @@ Using Vue/ Nuxt / MySQL to build interactive and visually engaging
         @mouseenter="cursorOutP31 = true"
   @mouseleave="cursorOutP31 = false"
 >
-          <div class="item7in">
-            <h2>{{ item.title }}</h2>
-            <p>{{ item.description }}</p>
-            <!-- <img src="/item6.png" alt=""> -->
+          <div class="item7">
+            <div class="in7" @click="backward">
+              <div class="in77">
+                <span v-if="isWide" class="material-symbols-rounded">arrow_forward</span>
+                <p v-if="!isWide">Scroll Backwards</p>
+              </div>
+            </div>
           </div>
         </template>
         <template v-else>
@@ -240,9 +248,9 @@ Using Vue/ Nuxt / MySQL to build interactive and visually engaging
               <p v-if="item.mm2">{{ item.mm2 }}</p>
             </div>
       <div class="textdisplay" v-if="isWide">
-        <p ref="texttRef">{{ currentText }}</p>
+        <p ref="texttRef">{{ wow[index + 1]?.textt }}</p>
       </div>
-            <div class="hpic" :style="{ 'background-image': 'url(' + item.pic + ')' }"@click="activate(index)"></div>
+            <div class="hpic" :style="{ 'background-image': 'url(' + item.pic + ')' }"></div>
             <div class="dp"></div>
           </div>
         </template>
@@ -302,24 +310,24 @@ Using Vue/ Nuxt / MySQL to build interactive and visually engaging
           </svg>
     </div>
     <div class="mw2">
-      <div class="root2">
+      <div class="root2" v-if="!isWide">
         <svg class="root3" ref="blob" r="50" id="root" data-name="root" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 971.44 126.28">
           <path d="M1.93,4.41l109.06-.03c20.23,2.31,48.83,8.47,48.04,34.06,11.76-22.54,37.98-32.77,62.1-36.01,40.59-5.46,104.25,5.21,108.24,55.44l2.98-13.34c8.75-24.65,35.9-37.23,60.27-41.3,34.64-5.8,73.89-1.02,100.47,23.4V4.41l396.09-.03c32.18,3.06,76.19,15.28,79.07,53.81,5.52,73.91-106.54,65.12-153.67,64.97-21.88-.07-44.26-.65-66.13-.75-33.06-.15-66.17.26-99.21-.07-1.23-.77-.78-9.03-.7-10.91,1.17-1.86,19.52.15,22.89-1.49V16.91l-13.94-.7c-.95.94,2.65,23.16.57,26.6-.86,2.28-10.76,1.06-13.12.14-6.67-2.59-9.27-21.35-14.27-26.74h-33.79v93.73l25.78,1.39v11.11h-94.05v-11.11l25.08-1.39V16.21h-34.14c-3.41,5.91-6.8,21.56-11.49,25.7-1.08.95-4.42,1.93-4.57,2.54-.63,2.56,2.5,11.57,2.81,15.17.67,7.81-.7,16.32-3.46,23.61-20.35,53.77-126.55,54.92-160.97,15.97-8.06-9.13-10.49-19.09-12.17-30.92-.76,22.93-16.79,39.16-36.8,48.03-51.19,22.68-155.1,8.38-137.72-68.16-2.82,3.46-5.65,5.95-9.53,8.2l-16.93,7.07c7.64,1.9,14.38,8.01,18.4,14.64,6.2,10.22,7.42,22.51,11.9,33.27h20.55c-.27,5.24,3.49,10.43-3.33,12.3-11.14,3.05-40.7,2.48-51.48-1.76-18.81-7.4-13.26-31.88-25.01-45.2-2.05-2.33-10.48-6.99-13.18-6.99h-19.51c-.07,0-1.05.97-1.05,1.04v39.23l22.99,1.39v11.11H1.93l-.6-11.01c1.3-2.08,19.7.66,21.56-1.93,1.35-1.89.5-21.49.61-25.62.32-12.7.26-24.75,0-37.43-.09-4.42.74-27.27-.59-29.13l-20.98-1.1V4.41ZM235.87,13.65c-47.11,4.62-50.75,85.94-6.66,98.56,68.71,19.67,77.5-105.51,6.66-98.56ZM410.73,13.64c-44.86,4.81-48.66,84.87-7.53,98.04,70.7,22.65,81.15-105.94,7.53-98.04ZM66.02,58.57c14.28-.61,41.15.66,48.89-14.11,5.71-10.89.48-19.75-10.1-24.2-2.58-1.09-12.43-4.04-14.76-4.04h-24.04v42.35ZM790.56,41.21h-14.98c-4.44-7.98-6.46-17.22-11.15-24.99h-49.81v40.96h32.74c.61-2.89,2.02-14.19,3.65-15.8,2.34-2.32,9.91.49,13.07-.16v42.35c-3.36-.95-10.93,2.04-13.24-.34-1.78-1.84-1.72-11.34-3.48-14.24h-32.74v42.35h55.73c2.68-7.03,4.9-15.94,8.45-22.48.62-1.15,2.39-3.9,3.75-3.9h12.89v24.65c0,3.64,15.08-.57,17.42.35V16.91l-22.29-.69v24.99ZM857.45,111.33c.94.63,19.61,0,22.64,0,29.24,0,48.81-33.65,42.5-60.41-6.86-29.13-40.26-37.8-66.54-34.01v91.3c0,.17,1.25,3.03,1.39,3.12Z"/>
         </svg>  
       </div>  
       <div class="mw2w">
-        <p>
-CONTACT ME:<br>
-matsu310720@gmail.com
-<br><br>
-SOCIALS<br>
-instagram<br>
-
-<br><br>
-PiPi Chou 2025 portfolio 
-<br>
-Build my site by Vue.js</p>
+        <div class="contact" @click="goC">
+          <div class="cw">
+            <p>Contact Me!</p>
+          </div>
+        </div>
+        <h4>Pi Pi Chou 2025 portfilio</h4>
       </div>
+      <div class="root2" v-if="isWide">
+        <svg class="root3" ref="blob" r="50" id="root" data-name="root" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 971.44 126.28">
+          <path d="M1.93,4.41l109.06-.03c20.23,2.31,48.83,8.47,48.04,34.06,11.76-22.54,37.98-32.77,62.1-36.01,40.59-5.46,104.25,5.21,108.24,55.44l2.98-13.34c8.75-24.65,35.9-37.23,60.27-41.3,34.64-5.8,73.89-1.02,100.47,23.4V4.41l396.09-.03c32.18,3.06,76.19,15.28,79.07,53.81,5.52,73.91-106.54,65.12-153.67,64.97-21.88-.07-44.26-.65-66.13-.75-33.06-.15-66.17.26-99.21-.07-1.23-.77-.78-9.03-.7-10.91,1.17-1.86,19.52.15,22.89-1.49V16.91l-13.94-.7c-.95.94,2.65,23.16.57,26.6-.86,2.28-10.76,1.06-13.12.14-6.67-2.59-9.27-21.35-14.27-26.74h-33.79v93.73l25.78,1.39v11.11h-94.05v-11.11l25.08-1.39V16.21h-34.14c-3.41,5.91-6.8,21.56-11.49,25.7-1.08.95-4.42,1.93-4.57,2.54-.63,2.56,2.5,11.57,2.81,15.17.67,7.81-.7,16.32-3.46,23.61-20.35,53.77-126.55,54.92-160.97,15.97-8.06-9.13-10.49-19.09-12.17-30.92-.76,22.93-16.79,39.16-36.8,48.03-51.19,22.68-155.1,8.38-137.72-68.16-2.82,3.46-5.65,5.95-9.53,8.2l-16.93,7.07c7.64,1.9,14.38,8.01,18.4,14.64,6.2,10.22,7.42,22.51,11.9,33.27h20.55c-.27,5.24,3.49,10.43-3.33,12.3-11.14,3.05-40.7,2.48-51.48-1.76-18.81-7.4-13.26-31.88-25.01-45.2-2.05-2.33-10.48-6.99-13.18-6.99h-19.51c-.07,0-1.05.97-1.05,1.04v39.23l22.99,1.39v11.11H1.93l-.6-11.01c1.3-2.08,19.7.66,21.56-1.93,1.35-1.89.5-21.49.61-25.62.32-12.7.26-24.75,0-37.43-.09-4.42.74-27.27-.59-29.13l-20.98-1.1V4.41ZM235.87,13.65c-47.11,4.62-50.75,85.94-6.66,98.56,68.71,19.67,77.5-105.51,6.66-98.56ZM410.73,13.64c-44.86,4.81-48.66,84.87-7.53,98.04,70.7,22.65,81.15-105.94,7.53-98.04ZM66.02,58.57c14.28-.61,41.15.66,48.89-14.11,5.71-10.89.48-19.75-10.1-24.2-2.58-1.09-12.43-4.04-14.76-4.04h-24.04v42.35ZM790.56,41.21h-14.98c-4.44-7.98-6.46-17.22-11.15-24.99h-49.81v40.96h32.74c.61-2.89,2.02-14.19,3.65-15.8,2.34-2.32,9.91.49,13.07-.16v42.35c-3.36-.95-10.93,2.04-13.24-.34-1.78-1.84-1.72-11.34-3.48-14.24h-32.74v42.35h55.73c2.68-7.03,4.9-15.94,8.45-22.48.62-1.15,2.39-3.9,3.75-3.9h12.89v24.65c0,3.64,15.08-.57,17.42.35V16.91l-22.29-.69v24.99ZM857.45,111.33c.94.63,19.61,0,22.64,0,29.24,0,48.81-33.65,42.5-60.41-6.86-29.13-40.26-37.8-66.54-34.01v91.3c0,.17,1.25,3.03,1.39,3.12Z"/>
+        </svg>  
+      </div>  
     </div>
   </div>
 </section>
@@ -355,13 +363,13 @@ Build my site by Vue.js</p>
   </template>
 
 
-<script setup>
+<script setup lang="ts">
 import { ref, onMounted, onBeforeUnmount, watch, nextTick, reactive } from 'vue';
 import gsap from 'gsap';
-// import { playEnter, playLeave } from "../views/layerAnimation";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import ScrollSmoother from 'gsap/ScrollSmoother';
-
+import SplitText from 'gsap/SplitText';
+import { useScrollRestore } from '../composables/useScrollRestore'
 import { useRouter } from 'vue-router';
 
 const router = useRouter();
@@ -369,9 +377,22 @@ const router = useRouter();
 function goB() {
   router.push('/LectureRecord'); // 跳轉時會觸發 beforeEach 的黑幕
 }
+function goC() {
+  router.push('/Contact'); // 跳轉時會觸發 beforeEach 的黑幕
+}
+onMounted(async () => {
+  if (sessionStorage.getItem('page-loaded')) return
 
+  await document.fonts.ready
+  await new Promise(r => setTimeout(r, 5000))
 
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother); 
+  document.body.classList.remove('lock-scroll')
+  sessionStorage.setItem('page-loaded', 'true')
+})
+
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText); 
+useScrollRestore()
+
 const cursorBig = ref(false)
 const cursortrue = ref(false)
 const cursorInP31 = ref(false)
@@ -379,20 +400,8 @@ const cursorOutP31 = ref(false)
 const isWide = ref(false)
 function updateWidth() {
   isWide.value = window.innerWidth < 800
-  console.log('isWide:', isWide.value)
-
-
+    console.log('isWide:', isWide.value)
   // 動態更新 posX
-  topItems[0].posX = isWide.value ? 100 : 100
-  topItems[1].posX = isWide.value ? 550 : 100
-  botItems[0].posX = isWide.value ? 350 : 10
-  botItems[1].posX = isWide.value ? 450 : 10
-  botItems[2].posX = isWide.value ? 550 : 10
-  topItems[0].posY = isWide.value ? 0 : 100
-  topItems[1].posY = isWide.value ? 0 : 400
-  botItems[0].posY = isWide.value ? 0 : 250
-  botItems[1].posY = isWide.value ? 0 : 550
-  botItems[2].posY = isWide.value ? 0 : 600
 }
 
 onMounted(() => {
@@ -413,7 +422,21 @@ onMounted(() => {
     smooth: 3,   // 1~3 之間，數字越大越滑
     effects: true
   });
-       
+
+  topItems[0].posX = isWide.value ? 220 : 100
+  topItems[1].posX = isWide.value ? 260 : 550
+
+  botItems[0].posX = isWide.value ? -90 : 0
+  botItems[1].posX = isWide.value ? -170 : 210
+  botItems[2].posX = isWide.value ? -20 : 645
+
+  topItems[0].posY = isWide.value ? 110 : 0
+  topItems[1].posY = isWide.value ? 240 : 0
+
+  botItems[0].posY = isWide.value ? 300 : 0
+  botItems[1].posY = isWide.value ? 400 : 0
+  botItems[2].posY = isWide.value ? 500 : 0
+  
   topItems.forEach((many, index) => {
     const el = topRefs.value[index]
     gsap.from(el, {
@@ -423,7 +446,7 @@ onMounted(() => {
       scale: 0.6,
       opacity: 0,
       duration: 2,
-      delay:3,
+      delay:5,
       ease:"power2.out",
       // ease: "expo.out",
       onComplete: () => gsap.set(el, { clearProps: "transform" })
@@ -439,7 +462,7 @@ onMounted(() => {
       scale: 0.6,
       opacity: 0,
       duration: 2,
-      delay:3,
+      delay:5,
       // ease: "expo.out",
       ease:"power2.out",
       onComplete: () => gsap.set(el, { clearProps: "transform" })
@@ -450,14 +473,14 @@ const topRefs = ref([])
 const botRefs = ref([])
 
     const topItems = reactive([
-      { label: '[1] Illustrator', posX: 100, posY: 0 },
-      { label: '[3] Developer', posX: 550, posY: 0 },
+      { id: 1,label: '[1] Illustrator', posX: 100, posY: 0 },
+      { id: 2,label: '[3] Developer', posX: 550, posY: 0 },
     ])
 
     const botItems = reactive([
-      { label: '[2] Leaner', posX: 0, posY: 0 },
-      { label: '[4] Creator', posX: 210, posY: 0 },
-      { label: '[5] Designer', posX: 710, posY: 0 },
+      { id: 1,label: '[2] Leaner', posX: 0, posY: 0 },
+      { id: 2,label: '[4] Designer', posX: 210, posY: 0 },
+      { id: 3,label: '[5] Scroll Down For More', posX: 675, posY: 0 },
     ])
 
 let dragging = false
@@ -474,6 +497,17 @@ const getClientPos = (e) => {
     }
   }
   return { x: e.clientX, y: e.clientY }
+}
+const onDrag = (e) => {
+  if (!dragging) return
+
+  e.preventDefault() // 重要：避免手機滑動整個畫面
+
+  const item = currentList === 'top' ? topItems[currentIndex] : botItems[currentIndex]
+  const { x, y } = getClientPos(e)
+
+  item.posX = x - startX
+  item.posY = y - startY
 }
 
 const startDrag = (e, index, list) => {
@@ -497,18 +531,6 @@ const startDrag = (e, index, list) => {
   window.addEventListener('touchend', stopDrag)
 }
 
-const onDrag = (e) => {
-  if (!dragging) return
-
-  e.preventDefault() // 重要：避免手機滑動整個畫面
-
-  const item = currentList === 'top' ? topItems[currentIndex] : botItems[currentIndex]
-  const { x, y } = getClientPos(e)
-
-  item.posX = x - startX
-  item.posY = y - startY
-}
-
 const stopDrag = () => {
   dragging = false
 
@@ -520,51 +542,6 @@ const stopDrag = () => {
   window.removeEventListener('touchmove', onDrag)
   window.removeEventListener('touchend', stopDrag)
 }
-
-const g1 = ref(null)
-const g2 = ref(null)
-const g3 = ref(null)
-const isOpen1 = ref(false)
-let currentThumb = null
-
-const open = (index) => {
-  switch(index){
-    case 1: currentThumb = g1.value; break;
-    case 2: currentThumb = g2.value; break;
-    case 3: currentThumb = g3.value; break;
-  }
-
-  if(!currentThumb) return
-
-  isOpen1.value = true
-
-  const rr = currentThumb.getBoundingClientRect()
-  const centerX = window.innerWidth / 2
-  const centerY = window.innerHeight / 2
-
-  const offsetX = centerX - (rr.left + rr.width / 2)
-  const offsetY = centerY - (rr.top + rr.height / 2)
-
-  document.querySelector("*").style.overflow = 'hidden'
-  currentThumb.style.transformOrigin = 'center center'
-  currentThumb.classList.add('middle')
-  currentThumb.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(${Math.min(window.innerWidth / rr.width * 0.7, window.innerHeight / rr.height * 0.7)})`
-}
-
-const close = () => {
-  if(!currentThumb) return
-  currentThumb.style.transform = 'translate(0,0) scale(1)'
-  isOpen1.value = false
-  document.querySelector("*").style.overflow = ''
-  setTimeout(() => {
-    if(currentThumb) {
-      currentThumb.classList.remove('middle')
-      currentThumb.style.transition = ''
-    }
-    currentThumb = null
-  }, 500)
-}
-
 
 const p4 = ref(null)
 const trip4 = ref(null)
@@ -578,24 +555,19 @@ onMounted(() => {
     opacity:1,
     duration: 5,
     ease: "power2.out"
-  })
-    .to('.root', {
-      scaleX: 1,
-      filter: 'blur(0px)',
-      duration: 3,
-      ease: 'power1.out'
-    }, '<0.5')
-  gsap.to(".chupic", {
-    y:0,
-    opacity:1,
-    duration: 1.1,
-    ease: "power2.out",
-  scrollTrigger: {
-    trigger: ".chupic", 
-    start: "top 90%", 
-    end: "bottom bottom", 
-    }
-  })
+  }, '>2')
+  .to('.root', {
+    scaleX: 1,
+    filter: 'blur(0px)',
+    duration: 3,
+    ease: 'power1.out'
+  }, '<0.5')
+  .from('.appfp1 h4', {
+    opacity: 0,
+    duration: 3,
+    ease: 'power1.out'
+  }, '>0.5')
+
   gsap.to(".pp5",{
     opacity: 1,
     borderRadius: 0,
@@ -604,6 +576,7 @@ onMounted(() => {
       start: 'top bottom',
       end: 'bottom bottom',
       scrub: true,
+      once: true,
     }
   })
     gsap.from(".personal2pic", {
@@ -611,25 +584,17 @@ onMounted(() => {
     scale: 1.2,
     scrollTrigger: {
       trigger: ".personal2pic",
-      start: "top 80%",
-      end: "bottom bottom",
+      start: "top 95%",
+      end: "top 50%",
       scrub:true,
       once:true,
     }
   });
-  gsap.from(".personal2", {
-    scrollTrigger: {
-      trigger: ".personal2",
-      start: "top top",
-      end: "bottom -100%",
-      pin: true,
-    }
-  });
-  gsap.utils.toArray(".g1").forEach((elem) => {
+  gsap.utils.toArray<HTMLElement>(".g1").forEach((elem) => {
   gsap.to(elem, {
     clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
     duration: 0.6,
-    ease: "power2.inOut",
+    ease:"power2.inOut",
     scrollTrigger: {
       trigger: elem,
       start: "top bottom",
@@ -637,23 +602,58 @@ onMounted(() => {
     }
   });
 });
-gsap.utils.toArray(".g1 img").forEach((elem) => {
+gsap.utils.toArray<HTMLElement>(".g1 img").forEach((elem) => {
   gsap.to(elem, {
-     y: -30,
+     y: isWide.value ? "-20" : "-30",
     scrollTrigger: {
-      trigger: ".g1 img",
+      trigger: elem,
       start: "top bottom",
       end: "bottom top",
       scrub: 2,
     }
   });
 });
+    gsap.to(".chur", {
+    y:0,
+    opacity:1,
+    duration: 1.1,
+    ease: "power2.inOut",
+    clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+  scrollTrigger: {
+    trigger: ".chur", 
+    start: isWide ?  "top 80%" :  "top 90%" ,
+    end: "bottom bottom", 
+    }
+  })
+gsap.from(".mew1", {
+  opacity:0,
+  y: 20,
+  duration: .6,
+  ease: 'power2.out',
+  scrollTrigger: {
+    trigger: ".mew1",
+    start: "top 80%",
+    end: "bottom bottom"
+  }
+});
+
+gsap.from(".mew2", {
+  opacity:0,
+  y: 20,
+  duration: .6,
+  ease: 'power2.out',
+    scrollTrigger: {
+      trigger: ".mew2",
+      start: "top 80%",
+      end: "bottom bottom",
+    }
+});
 gsap.to(".p21", {
     scrollTrigger: {
       trigger: ".p21",
       start: "top top",
       end: "bottom bottom",
-      pin:true,
+      pin: isWide.value ? false : true,
     }
   });
 
@@ -670,49 +670,102 @@ gsap.from(".p221", {
   opacity:0,
   y: 20,
   duration: .6,
+  ease: 'power2.out',
     scrollTrigger: {
       trigger: ".p221",
-      start: "top 70%",
-      end: "bottom bottom",
-      ease: 'power2.out'
+      start: isWide.value ? "top bottom" : "top 80%",
+      end: "bottom bottom"
     }
   });
 gsap.from(".p222", {
   opacity:0,
   y: 20,
   duration: .6,
+  ease: 'power2.out',
     scrollTrigger: {
       trigger: ".p222",
-      start: "top 70%",
+      start: isWide.value ? "top bottom" : "top 80%",
       end: "bottom bottom",
-      ease: 'power2.out'
     }
 });
 gsap.from(".p223", {
   opacity:0,
   y: 20,
   duration: .6,
+  ease: 'power2.out',
     scrollTrigger: {
       trigger: ".p223",
-      start: "top 70%",
+      start: isWide.value ? "top bottom" : "top 80%",
       end: "bottom bottom",
-      ease: 'power2.out'
+    }
+});
+gsap.from(".p224", {
+  opacity:0,
+  y: 20,
+  duration: .6,
+  ease: 'power2.out',
+    scrollTrigger: {
+      trigger: ".p224",
+      start: isWide.value ? "top bottom" : "top 80%",
+      end: "bottom bottom",
     }
 });
 gsap.from(".p3t1up", {
-  opacity:0.5,
+  opacity:0,
   y: 30,
-  duration: 1,
+  duration: .6,
+  ease: 'power2.out',
     scrollTrigger: {
       trigger: ".p3t1up",
-      start: "top 70%",
+      start: isWide.value ? "top bottom" : "top 80%",
       end: "bottom bottom",
-      ease: 'power2.out'
     }
 });
-
+gsap.from(".p3t2up", {
+  opacity:0,
+  y: 30,
+  duration: .6,
+  ease: 'power2.out',
+    scrollTrigger: {
+      trigger: ".p3t2up",
+      start: isWide.value ? "top bottom" : "top bottom",
+      end: "bottom bottom",
+    }
+});
+  gsap.from(".personal2", {
+    scrollTrigger: {
+      trigger: ".personal2",
+      start: "top top",
+      end: "bottom -200%",
+      pin: true,
+      pinType: isWide.value ? "fixed" : "transform",
+    }
+  });
+  gsap.from(".p31", {
+  opacity:0,
+  y: 30,
+  duration: .6,
+    scrollTrigger: {
+      trigger: ".p31",
+      start: isWide.value ? "top 80%" : "top 80%",
+      end: "bottom bottom",
+    }
+  });
+  gsap.from(".p23w", {
+  opacity:0,
+  duration: .6,
+    scrollTrigger: {
+      trigger: ".p23w",
+      start: isWide.value ? "top bottom" : "top top",
+      end: "bottom bottom",
+    }
+  });
 
 })
+
+
+
+
 
 const cursorFixed = ref(null)
 const cursor = ref(null)
@@ -735,8 +788,64 @@ onBeforeUnmount(() => {
 })
 
 const otherp = ref(null)
+const applySplitText =  async (
+  el: HTMLElement | null,
+  options: {
+    delay?: number
+  } = {}
+) => {
+  if (!el) return
+const { delay = 0 } = options
+  const text = el.textContent.trim()
+
+  el.innerHTML = text
+    .split(' ')
+    .map(word => `<span class="word">${word}</span>`)
+    .join('<span class="space"></span>')
+
+  const words = el.querySelectorAll('.word')
+
+  // 單字同時出現
+  gsap.from(words, {
+    opacity: 0,
+    duration: 0.4,
+    delay,
+    ease: 'power2.out'
+  })
+
+  // 字母階梯動畫
+  words.forEach(word => {
+    const chars = word.textContent.split('')
+    word.innerHTML = chars
+      .map(c => `<span class="char">${c}</span>`)
+      .join('')
+
+    gsap.from(word.querySelectorAll('.char'), {
+      x: () => gsap.utils.random(-10, 10),
+      opacity: 0,
+      duration: 0.4,
+      stagger: 0.08,
+      delay: delay + 0.1,
+      ease: 'power2.out'
+    })
+  })
+}
+const appfp1t = ref(null)
+const appfp2t = ref(null)
+const appfp3t = ref(null)
+
+onMounted(async () => {
+  await nextTick()
+  await document.fonts.ready
+
+  applySplitText(appfp1t.value, { delay: 6 })
+  applySplitText(appfp2t.value, { delay: 6 })
+  applySplitText(appfp3t.value, { delay: 6 })
+
+})
 
 onMounted (() => {
+
   const otherpw = otherp.value.textContent;
   otherp.value.innerHTML = otherpw
     .split(" ")
@@ -748,14 +857,12 @@ gsap.from(otherpwspan, {
   filter: "blur(2.5px)",
   opacity: 1,
   stagger: 0.05,
-  duration: 0.6,
-  ease: "power2.out",
   scrollTrigger: {
     trigger: otherp.value,
-    start: "top 65%",
-    end: "bottom 65%",
+    start: "clamp(top 60%)",
+    end: "clamp(top 10%)",
     scrub: true,
-    toggleActions: "play none none none"
+    // toggleActions: "play none none none"
   }
 });
 });
@@ -770,7 +877,7 @@ const wow = ref([
   { textt: '這是一個穿戴式裝置，透過使用者的呼吸控制裝置收縮，模擬陪伴的感覺。作品源於對孤獨情緒的探索：孤獨不是單一的存在，而是缺席的感受與未被回應的渴望。裝置設計穿戴於頸部與手腕，並融入生活化的元素，如膠布式樣，讓陪伴在日常中自然發生。' },
   { textt: '每隻鳥配有一段旋律，觀者觸碰鳥喙即可觸發音樂。當六隻鳥同時被觸發，六段旋律會組合成完整小樂曲。裝置需要六人協作，概念來自我對於人與人相處的理想狀態：每個人各自不同，卻在同一空間中互相影響、達成平衡。每段旋律，如同每個人的存在，都是不可或缺的。' },
   { textt: '這件作品以 AR 動畫呈現，透過手機掃描即可觀看。創作過程中，我使用 Procreate 手繪每一幀動畫，靈感來自我家附近的生活景象，捕捉夏日的光影與日常的微小情感，將熟悉的空間轉化為沉浸式的動畫體驗。' },
-  { textt: '文字 7' },
+  { textt: '以歐根紗為主要材質，透過其半透明、可隨光折射變色的特性，以「由少成多」為概念，重複堆疊、包覆、綁起，將單一輕薄纖維堆疊、擴張，最終生長出大面積的泡泡群聚。藉由材質的輕盈與光的流動性，呈現出介於實體與幻象之間的視覺體驗。' },
 ]);
 
 const texttRef = ref(null);
@@ -778,13 +885,21 @@ const currentText = ref(wow.value[1].textt)
 
 const itemsData = [
   { specialContent: "" }, 
-  { num: "01", name:"拾遺", tim: "2024.07 - 2025.05", m1: "陶瓷裝置", mm1: "Html / Css / Js", mm2: "Arduino", pic: '/src/assets/a1.png', pics: ['/src/assets/a1.png','/src/assets/a2.jpg','/src/assets/a3.jpg','/src/assets/a4.jpg']  }, // index 1
+  { num: "01", name:"拾遺", tim: "2024.07 - 2025.05", m1: "陶瓷裝置", mm1: "Html/Css/Js", mm2: "Arduino", pic: '/src/assets/a1.png', pics: ['/src/assets/a1.png','/src/assets/a2.jpg','/src/assets/a3.jpg','/src/assets/a4.jpg']  }, // index 1
   { num: "02", name:"氣息的反饋", tim: "2024.01 - 2024.05", m1: "充氣裝置", m2: "", mm1: "PP", mm2: "Arduino", pic: '/src/assets/b1.png', pics: ['/src/assets/b1.png','/src/assets/b2.png','/src/assets/b3.png','/src/assets/b4.png'] },
   { num: "03", name:"共生", tim: "2023.10 - 2024.01", m1: "陶瓷裝置", mm1:"Makey Makey", mm2:"Arduino", pic: '/src/assets/c1.jpg', pics: ['/src/assets/c1.jpg','/src/assets/c2.png','/src/assets/c3.png'] },
   { num: "04", name:"A子的夏天", tim: "2022.10 - 2023.01", m1: "AR動畫", mm1:"Procreate", pic: '/src/assets/a1.png', pics: ['/src/assets/a1.png','/src/assets/pp.png'] },
   { num: "05", name:"浮泡", tim: "2021.10", m1: "裝置藝術", mm1:"歐根紗", pic: '/src/assets/e1.JPG', pics: ['/src/assets/e1.JPG','/src/assets/e2.JPG'] },
   { title: "", description: "" }
 ];
+
+const backward = () => {
+    const container = p31.value;
+    container.scrollTo({
+      left: 0,
+      behavior: "smooth"
+    });
+}
 
 const p3t1up1 = ref(null);
 const p3t1up2 = ref(null);
@@ -826,8 +941,8 @@ onMounted(() => {
           }
         });
         item.addEventListener("click", () => {
-          if ( activeItem.value === i + 1 ) return;
-          activeItem.value = i; 
+        if (activeItem.value === i + 1 || i === 6) return;
+          activeItem.value = i + 1; 
           const containeritem = item.parentElement;
           const el = containeritem.children[activeItem.value - 1];
           containeritem.scrollTo({
@@ -899,7 +1014,7 @@ onMounted(() => {
       }
     };
 
-    function handleOverlay(index) {
+    const handleOverlay = (index: number) => {
       if (index === lastActive) return;
       lastActive = index;
 
@@ -1029,7 +1144,7 @@ const startPicCarousel = (index) => {
   if (intervals[index]) return;
 
   let i = currentPicIndex.value[index];
-  const slides = hpic.querySelectorAll('.slide');
+  const slides = hpic.querySelectorAll<HTMLElement>('.slide');
 
   // 顯示暫停的那張
   slides.forEach((s, idx) => {
@@ -1061,8 +1176,8 @@ const stopPicCarousel = (index) => {
       if (offsetLeft < closestOffset) {
         closestOffset = offsetLeft;
         closest = i;
-      }
-    });
+        }
+      });
 
     if (closest !== activeItem.value) {
       stopPicCarousel(activeItem.value);
@@ -1085,9 +1200,7 @@ const observer = new IntersectionObserver((entries) => {
     }, {
       threshold: 0.3   // p31 有 30% 出現在畫面才啟動
     });
-
     observer.observe(container);
-
     // scroll 時正常更新
     container.addEventListener('scroll', checkClosestItem);
 });
@@ -1098,7 +1211,6 @@ const p5 = ref(null);
 const textp5 = "My work is rooted in the quiet details of everyday life, capturing fleeting moments and subtle emotions. Beyond design, I find inspiration in drawing, reading, and observing the world around me, allowing these everyday encounters to quietly shape my creations.";
 const sp5 = textp5.split(' ');
 
-const p1ref = ref(null);
 const mw1 = ref(null);
 
 let index = 0;
@@ -1114,7 +1226,7 @@ container.style.position = 'fixed';
 container.style.left = '0';
 container.style.top = '0';
 container.style.pointerEvents = 'none';
-container.style.zIndex = '9999';
+container.style.zIndex = '99';
 document.body.appendChild(container);
 
 const measureSpan = document.createElement('span');
@@ -1172,7 +1284,7 @@ lastTriggerY = e.clientY;
 }
 
 // 建立並顯示單字（每個字用 span 包字母，並 stagger 顯示）
-function showWord(kk, x, y) {
+const showWord = (kk: string, x: number, y: number) => {
   const wordSpan = document.createElement('span');
   wordSpan.classList.add('p5word');
 
@@ -1197,13 +1309,13 @@ if(x > lastTriggerX) {
     const span = document.createElement('span');
     span.textContent = char;
     span.style.display = 'inline-block';
-    span.style.opacity = 0;
+    span.style.opacity = '0';
     span.style.transform = 'translateX(-5px)';
     wordSpan.appendChild(span);
 
     setTimeout(() => {
       span.style.transition = 'all 0.1s ease';
-      span.style.opacity = 1;
+      span.style.opacity = '1';
       span.style.transform = 'translateX(0)';
     }, i * 70);
   });
@@ -1219,12 +1331,12 @@ if (container.children.length > maxWords) {
 function startWordFadeOut(wordSpan) {
   if (!wordSpan) return;
 
-  const letters = Array.from(wordSpan.children);
+  const letters = Array.from(wordSpan.children) as Array<HTMLElement>;
 
   letters.forEach((char, i) => {
     setTimeout(() => {
-      char.style.opacity = 0;
-    }, i * 50); 
+      char.style.opacity = '0';
+    }, i * 50);
   });
 
   const totalTime = letters.length * 50 + 300;
@@ -1247,79 +1359,15 @@ function startWordFadeOut(wordSpan) {
     setTimeout(() => { isClearing = false }, 1000); // 1秒後才允許下一次
   });
 }
-// const p1refmm = (e) => {
-//   if (!p1ref.value) return;
-//   const mouseX = e.clientX;
-//   const mouseY = e.clientY;
-//   const rect1 = p1ref.value.getBoundingClientRect();
-//   const p1refspans = p1ref.value.querySelectorAll("span");
-
-//   p1refspans.forEach((span) => {
-    
-//     const spanRect = span.getBoundingClientRect();
-//     const centerX = spanRect.left + spanRect.width / 2;
-//     const centerY = spanRect.top + spanRect.height / 2;
-
-//     const relativeY = centerY - mouseY;
-//     const maxOffset = 50;
-//     const offsetY = Math.max(-maxOffset, Math.min(maxOffset, relativeY));
-
-//     const distanceX = Math.abs(mouseX - centerX);
-//     const maxDistanceX = rect1.width / 2;
-//     const ratioX = Math.max(0.2, 1 - distanceX / maxDistanceX);
-
-//     const finalOffsetY = offsetY * ratioX;
-//     const scaleBase = Math.abs(1 - (offsetY / maxOffset) * 0.5); 
-//     // 乘上 ratioX，遠離滑鼠縮小
-//     const finalScale = scaleBase * ratioX;
-
-//     // 避免 scale 太小變消失
-//     const clampedScale = Math.max(0.3, Math.min(2, finalScale));
-
-//     // span.style.transform = `translateY(-8%)`;
-//     span.style.transformOrigin = `top center`;
-//     span.style.transform = `scaleY(${clampedScale})`;
-
-//     // const maxRotate = 15;
-//     // const rotate = (relativeY / rect1.height) * maxRotate * ratioX;
-
-//     // span.style.transition = "transform 2s ease";
-//     // span.style.transform = `translateY(${finalOffsetY}px)`;
-//   });
-// };
-  
 
 onMounted(() => {
-  if (!p5.value) return;
-  p5.value.addEventListener('mouseenter', handleMouseEnter);
-  p5.value.addEventListener('mouseleave', handleMouseLeave);
-  p5.value.addEventListener('mousemove', handlemm);
+  if(!isWide.value){
+    if (!p5.value) return;
+    p5.value.addEventListener('mouseenter', handleMouseEnter);
+    p5.value.addEventListener('mouseleave', handleMouseLeave);
+    p5.value.addEventListener('mousemove', handlemm);
+  }
 
-// if (!p1ref.value) return;
-
-//   // 1️⃣ 把原本文字拆成字母
-//   const p1reftext = p1ref.value.textContent;
-//   p1ref.value.innerHTML = p1reftext
-//     .split("")
-//     .map((char) => `<span class="p1ref">${char}</span>`)
-//     .join("");
-//   const p1refspans = p1ref.value.querySelectorAll("span");
-
- 
-//     gsap.to(p1refspans, {
-//       stagger: 0.05,
-//     keyframes: [
-//     { scaleY: 5, ease: "power2.out" },
-//     { scaleY: 1, ease: "power2.in" }
-//   ],
-//     scrollTrigger: {
-//       trigger: p5.value,
-//       start: "top bottom",
-//       toggleActions: "play none none none"
-//     }
-//   });
-
-  // p5.value.addEventListener('mousemove', p1refmm);
 });
 
 onBeforeUnmount(() => {
@@ -1386,32 +1434,79 @@ onMounted(() => {
   });
   measureSpan.remove();
 
-  gsap.from((spans), {
-    opacity: 0.3,
-    stagger: 0.1,
-    scrollTrigger: {
-      trigger: ".personal1",
-      start: "top top",
-      end: "bottom top",
-      scrub: true,
-      pin: true,
-    }
-  });
-  gsap.to(".personal2", {
+    gsap.to(".personal2", {
     filter: "blur(5px)",
-    duration: 0.5,
     scrollTrigger: {
       trigger: ".personal1",
       start: "bottom 45%",
       end: "bottom -200%",
       toggleActions: "play reverse play reverse",
-      // scrub: true,
+      scrub: true,
     }
   });
-  
+
+    gsap.from((spans), {
+    opacity: 0.3,
+    stagger: 0.1,
+    scrollTrigger: {
+      trigger: ".personal1",
+      start: "top 64px",
+      end: "bottom top",
+      scrub: true,
+      pin: true,
+      pinType: isWide.value ? "fixed" : "transform",
+    }
+  });
 });
 
 const specialStyle = ref({
   fontSize: '1rem',
 })
+
+
+const g1 = ref(null)
+const g2 = ref(null)
+const g3 = ref(null)
+const isOpen1 = ref(false)
+let currentThumb = null
+
+const open = (index) => {
+  switch(index){
+    case 1: currentThumb = g1.value; break;
+    case 2: currentThumb = g2.value; break;
+    case 3: currentThumb = g3.value; break;
+  }
+
+  if(!currentThumb) return
+
+  isOpen1.value = true
+
+  const rr = currentThumb.getBoundingClientRect()
+  const centerX = window.innerWidth / 2
+  const centerY = window.innerHeight / 2
+
+  const offsetX = centerX - (rr.left + rr.width / 2)
+  const offsetY = centerY - (rr.top + rr.height / 2)
+
+  ;(document.querySelector("*") as HTMLElement).style.overflow = 'hidden';
+
+  currentThumb.style.transformOrigin = 'center center'
+  currentThumb.classList.add('middle')
+  currentThumb.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(${Math.min(window.innerWidth / rr.width * 0.7, window.innerHeight / rr.height * 0.7)})`
+}
+
+const close = () => {
+  if(!currentThumb) return
+  currentThumb.style.transform = 'translate(0,0) scale(1)'
+  isOpen1.value = false
+  ;(document.querySelector("*") as HTMLElement).style.overflow = '';
+  setTimeout(() => {
+    if(currentThumb) {
+      currentThumb.classList.remove('middle')
+      currentThumb.style.transition = ''
+    }
+    currentThumb = null
+  }, 500)
+}
+
 </script>
