@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory,useRoute, useRouter } from 'vue-router'
+import { createRouter, createWebHashHistory,useRoute, useRouter } from 'vue-router'
 import { nextTick } from 'vue';
 import Home from '../views/home.vue';
 import gsap from 'gsap';
@@ -50,7 +50,7 @@ await new Promise(resolve => setTimeout(resolve, 1500));
 
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(), 
   routes,
   scrollBehavior() {
     // ✅ 永遠回 top:0，交給我們自己控制

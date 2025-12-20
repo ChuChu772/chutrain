@@ -82,7 +82,7 @@
       </div>
     </div>
       <div class="chur">
-        <div class="chupic"><img src="/chupic.png" alt="">
+        <div class="chupic"><img src="@/assets/chupic.png" alt="">
       </div>
     </div>
   </div>
@@ -268,7 +268,7 @@ Using Vue/ Nuxt / MySQL to build interactive and visually engaging
     </div>
     <div class="personal2" ref="personal2">
       <div class="personal2pic">
-        <img src="/p4.jpg" alt=""></img>
+        <img src="@/assets/p4.jpg" alt=""></img>
       </div>
     </div>
   </div>
@@ -284,13 +284,13 @@ Using Vue/ Nuxt / MySQL to build interactive and visually engaging
     </transition>
     <div class="gallery">
       <div class="g1" @click="open(1)" ref="g1">
-        <img src="/z-01.png"></img>
+        <img src="@/assets/z-01.png"></img>
       </div>
       <div class="g1" @click="open(2)" ref="g2">
-        <img src="/z-02.png"></img>
+        <img src="@/assets/z-02.png"></img>
       </div>
       <div class="g1" @click="open(3)" ref="g3">
-        <img src="/z-03.png"></img>
+        <img src="@/assets/z-03.png"></img>
       </div>
     </div>
   </div>
@@ -908,7 +908,7 @@ const currentText = ref(wow.value[1].textt)
 
 const itemsData = [
   { specialContent: "" }, 
-  { num: "01", name:"拾遺", tim: "2024.07 - 2025.05", m1: "陶瓷裝置", mm1: "Html/Css/Js", mm2: "Arduino", pic: '/src/assets/a1.png', pics: ['/src/assets/a1.png','/src/assets/a2.jpg','/src/assets/a3.jpg','/src/assets/a4.jpg']  }, // index 1
+  { num: "01", name:"拾遺", tim: "2024.07 - 2025.05", m1: "陶瓷裝置", mm1: "Html/Css/Js", mm2: "Arduino", pic: '@/assets/a1.png', pics: ['/src/assets/a1.png','/src/assets/a2.jpg','/src/assets/a3.jpg','/src/assets/a4.jpg']  }, // index 1
   { num: "02", name:"氣息的反饋", tim: "2024.01 - 2024.05", m1: "充氣裝置", m2: "", mm1: "PP", mm2: "Arduino", pic: '/src/assets/b1.png', pics: ['/src/assets/b1.png','/src/assets/b2.png','/src/assets/b3.png','/src/assets/b4.png'] },
   { num: "03", name:"共生", tim: "2023.10 - 2024.01", m1: "陶瓷裝置", mm1:"Makey Makey", mm2:"Arduino", pic: '/src/assets/c1.jpg', pics: ['/src/assets/c1.jpg','/src/assets/c2.png','/src/assets/c3.png'] },
   { num: "04", name:"A子的夏天", tim: "2022.10 - 2023.01", m1: "AR動畫", mm1:"Procreate", pic: '/src/assets/a1.png', pics: ['/src/assets/a1.png','/src/assets/pp.png'] },

@@ -496,17 +496,17 @@ const record = [
   { 
     name: '陳敬恆｜赤燭遊戲 美術總監',
     content: '獨立遊戲創作：從視覺建構世界觀',
-    pic: '/lecture-02.png'
+    pic: '@/assets/lecture-02.png'
   },
   { 
     name: '林思翰｜Group.G AI 文化科技導演',
     content: '生成未來：AI導演的敘事實驗與業介現象',
-    pic: '/lecture-03.png'
+    pic: '@/assets/lecture-03.png'
   },
   { 
     name: '陳念瑩｜[ 2022 金曲獎 ] 最佳裝幀設計獎設計師',
     content: '自由創作者的自學與自立之路：創作如何成為職涯？',
-    pic: '/lecture-01.png'
+    pic: '@/assets/lecture-01.png'
   }
 ]
 

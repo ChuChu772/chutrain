@@ -261,9 +261,9 @@ const props = defineProps({
 const emit = defineEmits(['change-cursor'])
 
 const w = [
-    { title: 'A History Of Taiwan Ceramic Patterns', year: '2024 - 2025', type: 'RWD', content: '結合陶瓷創作與 Arduino 網頁互動設計。觀者可以透過點選不同時期或紋樣類別進行互動。', link:'https://chuchu772.github.io/chuchu/k2/tty.html', image: '/src/assets/a1.png' },
-    { title: 'La1ako（ 施工中 ）', year: '2025', type: 'RWD', content: '為 La1ako 架設的線上商店，把購物從行為變成感受，讓使用網站本身也能是一段體驗。', image: '/lako.jpg'},
-    { title: 'OPQ temporary website for sabukaru pop-up', year: '2025', type: 'Mobile Only', content: 'OPQ 為 Sabukaru 在台灣活動打造的臨時網站，網站用於活動期間的資訊展示與互動。', image: '/iPhone-01.png', link: 'https://opqtest.com/'}
+    { title: 'A History Of Taiwan Ceramic Patterns', year: '2024 - 2025', type: 'RWD', content: '結合陶瓷創作與 Arduino 網頁互動設計。觀者可以透過點選不同時期或紋樣類別進行互動。', link:'https://chuchu772.github.io/chuchu/k2/tty.html', image: '@/assets/a1.png' },
+    { title: 'La1ako（ 施工中 ）', year: '2025', type: 'RWD', content: '為 La1ako 架設的線上商店，把購物從行為變成感受，讓使用網站本身也能是一段體驗。', image: '@/assets/lako.jpg'},
+    { title: 'OPQ temporary website for sabukaru pop-up', year: '2025', type: 'Mobile Only', content: 'OPQ 為 Sabukaru 在台灣活動打造的臨時網站，網站用於活動期間的資訊展示與互動。', image: '@/assets/iPhone-01.png', link: 'https://opqtest.com/'}
 ]
 
 
