@@ -616,18 +616,18 @@ gsap.utils.toArray<HTMLElement>(".g1 img").forEach((elem) => {
     }
   });
 });
-    gsap.to(".chur", {
-    y:0,
-    opacity:1,
-    duration: 1.1,
-    ease: "power2.inOut",
-    clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+  gsap.to(".chur", {
+  y:0,
+  opacity:1,
+  duration: 1.1,
+  ease: "power2.inOut",
+  clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
   scrollTrigger: {
     trigger: ".chur", 
-    start: isWide ?  "top 80%" :  "top 90%" ,
+    start: isWide ?  "top 80%" :  "top bottom" ,
     end: "bottom bottom", 
     }
-  })
+})
 gsap.from(".mew1", {
   opacity:0,
   y: 20,
