@@ -491,22 +491,24 @@ document.fonts.ready.then(() => {
 });
 });
 
-
+import l1 from '@/assets/lecture-02.png'
+import l2 from '@/assets/lecture-03.png'
+import l3 from '@/assets/lecture-01.png'
 const record = [
   { 
     name: '陳敬恆｜赤燭遊戲 美術總監',
     content: '獨立遊戲創作：從視覺建構世界觀',
-    pic: '@/assets/lecture-02.png'
+    pic: l1
   },
   { 
     name: '林思翰｜Group.G AI 文化科技導演',
     content: '生成未來：AI導演的敘事實驗與業介現象',
-    pic: '@/assets/lecture-03.png'
+    pic: l2
   },
   { 
     name: '陳念瑩｜[ 2022 金曲獎 ] 最佳裝幀設計獎設計師',
     content: '自由創作者的自學與自立之路：創作如何成為職涯？',
-    pic: '@/assets/lecture-01.png'
+    pic: l3
   }
 ]
 
