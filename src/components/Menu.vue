@@ -105,7 +105,7 @@ p{
 .menuword {
   display: flex;
   position: relative;
-  z-index: 9999;
+  z-index: 999;
   flex-direction: column;
   height: 80%;
   width: calc(100% - 2rem);
@@ -418,12 +418,12 @@ if(isWide.value){
 
 watch(showContent, async (visible) => {
   if (visible) {
-    await nextTick() // 確保 DOM 已渲染
+    await nextTick()
     const items = menuWord.value.querySelectorAll('p, .link')
     gsap.from(items, {
       y: 20,
       opacity: 0,
-      stagger: 0.05, // 每個元素依序出現間隔 0.1s
+      stagger: 0.05,
       duration: 1.5,
       ease: 'power2.out'
     })

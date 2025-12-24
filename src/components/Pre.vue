@@ -1,34 +1,34 @@
 <template>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_back,arrow_forward" />
     <!-- <section class="heitop"></section> -->
-     <div id="pre">
-    <section class="pre-root">
-        <div class="heitop" v-if="isWide"></div>
-        <div class="hei"
-    v-for="(items, index) in w"
-    :key="index"
-    >
-    <div class="hei1">
-        <div class="heiw">
-            <p>{{ items.title }}</p>
-            <p>{{ items.type }}</p>
-            <p>{{ items.content }}</p>
-        </div>
-        <a :href="items.link" target="_blank" class="heiw2" v-if="isWide">
-            <p>Visit Site</p>
-             <span class="material-symbols-rounded">arrow_forward</span>
-        </a>
-    </div>
-    <div class="heipic"
-    @mouseenter="emit('change-cursor', true)"
-    @mouseleave="emit('change-cursor', false)"
-    >
+    <div id="pre">
+      <section class="pre-root">
+          <div class="heitop" v-if="isWide"></div>
+          <div class="hei"
+      v-for="(items, index) in w"
+      :key="index"
+      >
+      <div class="hei1">
+          <div class="heiw">
+              <p>{{ items.title }}</p>
+              <p>{{ items.type }}</p>
+              <p>{{ items.content }}</p>
+          </div>
+          <a :href="items.link" target="_blank" class="heiw2" v-if="isWide">
+              <p>Visit Site</p>
+              <span class="material-symbols-rounded">arrow_forward</span>
+          </a>
+      </div>
+        <div class="heipic"
+        @mouseenter="emit('change-cursor', true)"
+        @mouseleave="emit('change-cursor', false)"
+        >
         <a :href="items.link" target="_blank" rel="noopener noreferrer" class="heipicoverlay"></a>
             <img :src="items.image" />
         </div>
     </div>
     </section>
-    </div>
+  </div>
 </template>
 
 <style scoped>

@@ -403,8 +403,6 @@ const cursorOutP31 = ref(false)
 const isWide = ref(false)
 function updateWidth() {
   isWide.value = window.innerWidth < 800
-    console.log('isWide:', isWide.value)
-  // 動態更新 posX
 }
 
 onMounted(() => {
