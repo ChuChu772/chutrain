@@ -34,7 +34,7 @@
             </form>
         </div>
         <div class="lastcon">
-                <button class="tbot1" @click="goBack" v-if="!isWide">
+                <button class="tbot1" @click="goBack">
                     <div class="tbot2">
                         <p>Back</p>
                     </div>
@@ -42,11 +42,6 @@
                 <button class="submit" type="submit" @click="submitForm">
                     <div class="sb">
                         <p>Submit Message</p>
-                    </div>
-                </button>
-                <button class="tbot1" @click="goBack" v-if="isWide">
-                    <div class="tbot2">
-                        <p>Back</p>
                     </div>
                 </button>
             </div>
@@ -495,7 +490,7 @@
   outline: none;
   width: var(--width);
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     position: relative;
     justify-content: center;
     align-items: center;
