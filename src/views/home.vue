@@ -921,7 +921,7 @@ import c3 from '@/assets/c3.png'
 import d1 from '@/assets/d1.png'
 import d2 from '@/assets/d2.png'
 import d3 from '@/assets/d3.png'
-import d4 from '@/assets/d4.jpg'
+import d4 from '@/assets/d4.png'
 import e1 from '@/assets/e1.jpg'
 import e2 from '@/assets/e2.jpg'
 
