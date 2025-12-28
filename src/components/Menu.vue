@@ -302,24 +302,7 @@ p{
     height: 100%;
     width: 100%;
     inset: 0;
-    /* backdrop-filter: blur(5px); */
-  /* background-color: rgba(237, 240, 234, 0.3); */
 }
-/* 
-.menu-fade-enter-active {
-  transition: all 0.5s ease;
-}
-.menu-fade-leave-active {
-  transition: all 0.2s ease;
-}
-.menu-fade-enter-from, .menu-fade-leave-to {
-  opacity: 0;
-  transform: translateY(10px);
-}
-.menu-fade-enter-to, .menu-fade-leave-from {
-  opacity: 1;
-  transform: translateY(0);
-} */
 }
 </style>
 
@@ -345,6 +328,7 @@ onMounted(() => {
 })
 
 const isWide = ref(window.innerWidth < 800)
+
 function fp() {
   const el = document.querySelector('#fp');
   if (el && smoother) {
@@ -400,7 +384,6 @@ const showMenu = computed(() => {
 })
 onMounted(() => {
   if (!isWide.value) {
-    // 寬螢幕立即顯示
     showContent.value = true
   } 
   watch(toggleab, (newVal) => {
@@ -409,7 +392,6 @@ onMounted(() => {
       showContent.value = true
     }, 500)
   }else if (isWide.value && newVal === 'classB') {
-    // 回到 B 就隱藏
     showContent.value = false
   }
 }, { immediate: true })

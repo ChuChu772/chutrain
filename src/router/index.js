@@ -22,7 +22,6 @@ window.playEnter = async (done) => {
 
   layer.style.opacity = 0;
 
-  // 等動畫跑完
   await gsap.to('#page-layer', {
     opacity: 1,
     duration: .6
@@ -38,7 +37,6 @@ window.playLeave = async (done) => {
   await nextTick();
 await new Promise(resolve => setTimeout(resolve, 1500));
 
-  // 再跑離場動畫
   await gsap.to('#page-layer', {
     opacity: 0,
     duration: .6
@@ -53,23 +51,19 @@ const router = createRouter({
   history: createWebHashHistory(), 
   routes,
   scrollBehavior() {
-    // ✅ 永遠回 top:0，交給我們自己控制
     return { top: 0 }
   }
 })
 
 router.beforeEach((to, from, next) => {
-  // ✅ 離開 Home 時記錄 scroll
   if (from.name === 'Home') {
     saveScroll()
   }
 
-  // ✅ 進頁面一定先歸零（GSAP 穩定關鍵）
-
    window.playEnter(() => {
     setTimeout(() => {
       window.scrollTo(0, 0)
-    }, 10)   // ✅ 延遲 100ms
+    }, 10)
     next()
   })
 })

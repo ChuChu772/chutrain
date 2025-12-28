@@ -543,7 +543,7 @@ const isWide = window.innerWidth < 800
 const router = useRouter()
 
 function goBack() {
-  router.back()   // 或 router.go(-1)
+  router.back()
 }
 
 gsap.registerPlugin(ScrollTrigger,SplitText,ScrollSmoother);
@@ -552,7 +552,7 @@ onMounted(() => {
 window.scrollTo(0, 0);
     ScrollSmoother.create({
     wrapper: '#smooth-wrapper',
-    smooth: 2,   // 1~3 之間，數字越大越滑
+    smooth: 2,
     effects: true
     });
 

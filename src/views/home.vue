@@ -372,17 +372,16 @@ import { useScrollRestore } from '../composables/useScrollRestore'
 import { useRouter } from 'vue-router';
 import { debounce, throttle } from 'lodash-es';
 import chupic from '@/assets/chupic.png'
-// 或單獨 import
-
 
 const router = useRouter();
 
 function goB() {
-  router.push('/LectureRecord'); // 跳轉時會觸發 beforeEach 的黑幕
+  router.push('/LectureRecord');
 }
 function goC() {
-  router.push('/Contact'); // 跳轉時會觸發 beforeEach 的黑幕
+  router.push('/Contact');
 }
+
 onMounted(async () => {
   if (sessionStorage.getItem('page-loaded')) return
 
@@ -407,7 +406,7 @@ function updateWidth() {
 
 onMounted(() => {
   updateWidth()
-  window.addEventListener('resize', updateWidth) // 監聽螢幕變化
+  window.addEventListener('resize', updateWidth)
 })
 
 onBeforeUnmount(() => {
@@ -420,7 +419,7 @@ onMounted(() => {
 
   ScrollSmoother.create({
     wrapper: '#smooth-wrapper',
-    smooth: 3,   // 1~3 之間，數字越大越滑
+    smooth: 3,
     effects: true
   });
 
@@ -502,7 +501,7 @@ const getClientPos = (e) => {
 const onDrag = (e: MouseEvent) => {
   if (!dragging) return
 
-  e.preventDefault() // 重要：避免手機滑動整個畫面
+  e.preventDefault()
 
   const item = currentList === 'top' ? topItems[currentIndex] : botItems[currentIndex]
   const { x, y } = getClientPos(e)
@@ -511,7 +510,7 @@ const onDrag = (e: MouseEvent) => {
   item.posY = y - startY
 }
 
-const startDrag = (e, index, list) => {
+const startDrag = (e: MouseEvent | TouchEvent, index : number, list: 'top' | 'bot') => {
   dragging = true
   currentIndex = index
   currentList = list
@@ -777,7 +776,6 @@ let cursorY = 0
 
 function animateCursor() {
   if (cursor.value) {
-    // 緩動公式
     cursorX += (targetX - cursorX) * 0.05
     cursorY += (targetY - cursorY) * 0.05
 
@@ -792,7 +790,6 @@ function handleMouseMove(e: MouseEvent) {
     cursorFixed.value.style.transform = `translate(${e.clientX - 7}px, ${e.clientY - 7}px)`
   }
 
-  // 目標位置更新，不立即改 transform
   const scrollY = window.scrollY
   const scrollX = window.scrollX
   targetX = e.clientX + scrollX - 17
@@ -827,7 +824,6 @@ const { delay = 0 } = options
 
   const words = el.querySelectorAll('.word')
 
-  // 單字同時出現
   gsap.from(words, {
     opacity: 0,
     duration: 0.4,
@@ -835,7 +831,6 @@ const { delay = 0 } = options
     ease: 'power2.out'
   })
 
-  // 字母階梯動畫
   words.forEach(word => {
     const chars = word.textContent.split('')
     word.innerHTML = chars
@@ -949,7 +944,7 @@ const p3item6 = ref(null);
 let currentTween = null;
 let currentClone = null;
 let animationTimeout = null;
-let hasFadedOut = false; // 避免重複淡出
+let hasFadedOut = false;
 
 onMounted(() => {
   if (window.innerWidth > 800) {
@@ -1146,7 +1141,7 @@ onMounted(() => {
 
     p31.value.addEventListener("scroll", checkLeftMost);
     checkLeftMost();
-  } // <-- 結束 if
+  }
 
   });
 
@@ -1163,12 +1158,10 @@ const startPicCarousel = (index) => {
   const itemData = itemsData[index];  
   if (!itemData?.pics?.length) return;
 
-  // 取得該 item 的 hpic 容器
   const itemEl = document.querySelectorAll('.item')[index];
   const hpic = itemEl.querySelector('.hpic');
   if (!hpic) return;
 
-  // 如果 slides 已經存在，不要重建，只啟動 interval
   const existingSlides = hpic.querySelectorAll('.slide');
   if (existingSlides.length === 0) {
     itemData.pics.forEach((url, idx) => {
@@ -1239,7 +1232,6 @@ const observer = new IntersectionObserver((entries) => {
       threshold: 0.3
     });
     observer.observe(container);
-    // scroll 時正常更新
     container.addEventListener('scroll', checkClosestItem);
 });
 }
@@ -1281,26 +1273,20 @@ function getTextWidth(text: string) {
   return measureSpan.offsetWidth;
 }
 
-// 當滑鼠進入 p5 區域
 function handleMouseEnter(e: MouseEvent) {
   isActive = true;
   index = 0;
-  // 初始化觸發點為滑鼠當下位置
   lastTriggerX = e.clientX;
   lastTriggerY = e.clientY;
 }
 
-// 離開區域
 function handleMouseLeave() {
   isActive = false;
 }
 
-// 滑鼠移動檢查
 function handlemm(e: MouseEvent) {
   if (!isActive) return;
 
-
-  // 計算從上次觸發位置移動的距離
 const currentWord = sp5[index % sp5.length] || '';
 const dx = e.clientX - lastTriggerX;
 const dy = e.clientY - lastTriggerY;
@@ -1311,10 +1297,9 @@ accumulatedDistance += distance;
 const currentWordWidth = getTextWidth(currentWord) + 10;
 if (accumulatedDistance >= currentWordWidth) {
     showWord(currentWord, e.clientX, e.clientY);
-    accumulatedDistance -= currentWordWidth; // 扣掉已觸發的距離
+    accumulatedDistance -= currentWordWidth;
     index++;
 }
-// 更新觸發點（只影響下一次距離判斷）
 lastTriggerX = e.clientX;
 lastTriggerY = e.clientY;
 }
@@ -1338,7 +1323,6 @@ const showWord = (kk: string, x: number, y: number) => {
 if(x > lastTriggerX) {
   wordSpan.style.transform = 'translateX(-100%)'; }
 
-  // 逐字動畫：**不影響寬度**
   const letters = kk.split('');
   letters.forEach((char, i) => {
     const span = document.createElement('span');
@@ -1391,7 +1375,7 @@ function startWordFadeOut(wordSpan: HTMLElement) {
       startWordFadeOut(wordSpan as HTMLElement);
     });
 
-    setTimeout(() => { isClearing = false }, 1000); // 1秒後才允許下一次
+    setTimeout(() => { isClearing = false }, 1000);
   });
 }
 
@@ -1412,7 +1396,6 @@ onBeforeUnmount(() => {
   p5.value.removeEventListener('mousemove', handlemm);
   // p5.value.removeEventListener('mousemove', p1refmm);
   
-  // 清理 container
   if (container.parentNode) container.parentNode.removeChild(container);
 });
 
@@ -1424,12 +1407,9 @@ onMounted(() => {
   const originalText = mewRef3.value.innerText;
   mewRef3.value.innerHTML = ' ';
 
-  // 拆成單詞 (保留空格)
   const words = originalText.split(/(\s+)/);
   const spans = [];
 
-
-  // 建立隱藏測量用 span
   const measureSpan = document.createElement("span");
   measureSpan.style.visibility = "hidden";
   measureSpan.style.whiteSpace = "pre";

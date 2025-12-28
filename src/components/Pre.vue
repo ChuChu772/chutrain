@@ -332,7 +332,6 @@ onMounted(async () => {
     again();
 });
 
-// 離開元件時清理動畫
 onBeforeUnmount(() => {
   ScrollTrigger.getAll().forEach(t => t.kill());
 });
